@@ -19,7 +19,7 @@ public class ContatoController  {
     @PostMapping("/cadastro")
     public String saveContato(@ModelAttribute ("contato") Contato contato){
         contatoService.saveContato(contato);
-        return "redirect:/home.html";
+        return "redirect:/index.html";
     }
 
     @GetMapping("/novo")

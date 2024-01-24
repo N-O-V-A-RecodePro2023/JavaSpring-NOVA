@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>N.O.V.A</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!-- Acessibilidade-->
+    <link rel="import" href="vlibras.html">
+    <script src="https://cdn.userway.org/widget.js" data-account="09FcxZNn6a"></script>
+    <script src="acessibilidade.js"></script>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+      
+        <!-- Spinner End -->
+
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <img src="/img/LogoNOVA.png" alt="Descrição da imagem" style="float: left; margin-right: 10px;">
+                    <h1 class="m-0">N.O.V.A</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="sobre.html" class="nav-item nav-link">Sobre Nós</a>
+                        <a href="depoimentos.html" class="nav-item nav-link">Depoimentos</a>
+                        <a href="cursos.html" class="nav-item nav-link">Cursos</a>
+                        <a href="vagas.html" class="nav-item nav-link">Vagas</a>
+                        <a href="contato.html" class="nav-item nav-link">Contato</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cadastre-se</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="cadastroEmpresa.html" class="dropdown-item">Empresas</a>
+                                <a href="cadastroCandidatos.html" class="dropdown-item">Candidatos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="login.html" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Entrar</a>
+                </div>
+            </nav>
+            <div class="container-xxl py-5 hero-header custom-bg-primary">
+
+        <div class="container-xxl position-relative p-0">
+
+            <!-- Navbar Start -->
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                    <h2 class="nocontent d-none"> Barra de Navegação </h2>
+                    <a href="" class="navbar-brand p-0">
+                        <figure class="m-0">
+                            <img src="img/LogoNOVA.png" alt="Logotipo N.O.V.A" style="float: left; margin-right: 10px;">
+                            <h1 class="m-0">N.O.V.A</h1>
+                        </figure>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto py-0">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+                                <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                                <li class="nav-item"><a href="/vagas.html" class="nav-link">Vagas</a></li>
+                                <li class="nav-item"><a href="/contato/novo" class="nav-link">Contato</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle"
+                                        data-bs-toggle="dropdown">Cadastre-se</a>
+                                    <div class="dropdown-menu m-0">
+                                        <a class="dropdown-item" th:href="@{/empresa/novo}">Empresas</a>
+                                <a class="dropdown-item" th:href="@{/candidato/novo}">Candidatos</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="/login" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
+                            role="button">Entrar</a>
+                    </div>
+                </nav>
+            </header>
+            <!-- Navbar End -->
+
+            <!-- Vagas Start -->
+            <section class="container-xxl py-5 hero-header" style="background-color: #257f88ff;">
+
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 py-5">
+                        <div class="col-12 text-center">
+                            <h1 class="text-white animated slideInDown">Vagas</h1>
+                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white"
+                                            href="cadastroCandidatos.html">Cadastro</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Project</li>
+
+                            <nav aria-label="Breadcrumb">
+                                <h2 class="nocontent d-none"> Home | Vagas | Cadastro </h2>
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="vagas.html">Vagas</a>
+                                    </li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Cadastro</li>
+
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Vagas Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title text-secondary justify-content-center"><span></span>Vagas<span></span>
+                    </p>
+                    <h1 class="text-center mb-5">Vagas de Emprego disponíveis</h1>
+                </div>
+                <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-12 text-center">
+
+            </section>
+            <!-- Vagas End -->
+
+            <!-- Banner de Vagas Start -->
+            <section class="container-xxl py-5">
+                <div class="container py-5 px-lg-5">
+                    <div class="wow fadeInUp" data-wow-delay="0.1s">
+                        <h6 class="section-title text-secondary justify-content-center"><span></span>Vagas<span></span>
+                        </h6>
+                        <h2 class="text-center mb-5">Vagas de Emprego disponíveis</h2>
+                    </div>
+                    <nav class="col-12 text-center mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                        <h2 class="nocontent d-none"> Barra de Navegação de Empregos</h2>
+
+                        <ul class="list-inline mb-5" id="portfolio-flters">
+                            <li class="mx-2 active" data-filter="*">All</li>
+                            <li class="mx-2" data-filter=".first">ADM</li>
+                            <li class="mx-2" data-filter=".second">Saúde</li>
+
+                            <li class="mx-2" data-filter=".third">Industria</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row g-4 portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/vagas01.png" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" data-bs-toggle="modal"
+                                        data-bs-target="#modalCard01"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="cadastroCandidatos.html"><i
+                                            class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2" style="font-size: 4vh;">Assistente Administrativo
+                                </p>
+                                <h5 class="lh-base mb-0" style="font-size: 3vh;">CLT | ASSISTÊNCIA MÉDICA | VT/VR |
+                                    GYMPASS | PLR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/vagas02.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" data-bs-toggle="modal"
+                                        data-bs-target="#modalCard02"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="cadastroCandidatos.html"><i
+                                            class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2" style="font-size: 4vh;">Técnico em Enfermagem</p>
+                                <h5 class="lh-base mb-0" style="font-size: 3vh;">CLT | VA/VT | ASSISTÊNCIA MÉDICA |
+                                    GYMPASS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item third wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/vagas03.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" data-bs-toggle="modal"
+                                        data-bs-target="#modalCard03"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="cadastroCandidatos.html"><i
+                                            class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2" style="font-size: 4vh;">Assistente Financeiro SR
+                                </p>
+                                <h5 class="lh-base mb-0" style="font-size: 3vh;">VR/VA | ASSISTÊNCIA MÉDICA | GYMPASS |
+                                    VT | PLR</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/vagas04.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" data-bs-toggle="modal"
+                                        data-bs-target="#modalCard04"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="cadastroCandidatos.html"><i
+                                            class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2" style="font-size: 4vh;">Farmacêutico Hopitalar
+                                </p>
+                                <h5 class="lh-base mb-0" style="font-size: 3vh;">CLT | VA/VT | ASSISTÊNCIA MÉDICA |
+                                    GYMPASS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/vagas05.png" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" data-bs-toggle="modal"
+                                        data-bs-target="#modalCard05"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="cadastroCandidatos.html"><i
+                                            class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2" style="font-size: 4vh;">Desenvolvedor JR</p>
+                                <h5 class="lh-base mb-0" style="font-size: 3vh;">VR/VA | ASSISTÊNCIA MÉDICA | GYMPASS |
+                                    VT | PLR</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item third wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/vagas06.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" data-bs-toggle="modal"
+                                        data-bs-target="#modalCard06"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="cadastroCandidatos.html"><i
+                                            class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2" style="font-size: 4Vh;">Promotor de Vendas</p>
+                                <h5 class="lh-base mb-0" style="font-size: 3vh;">CLT | ASSISTÊNCIA MÉDICA | VT/VR |
+                                    GYMPASS | PLR</a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Vagas End -->
+
+        <!-- Modal Vagas -->
+
+        <!-- Modal 01-->
+        <div class="modal fade" id="modalCard01" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content shadow">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Lista de Requisitos -->
+                        <!-- Lista de Requisitos -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>O que você precisa para se candidatar?</h5>
+                                <div class="icon-check"><i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
+                                    Completo em Economia, Ciências Contábeis, Administração ou Engenharia</div>
+                                <div class="icon-check"><i class="fas fa-language" style="color: #ff904a;"></i> Inglês
+                                    fluente</div>
+                                <div class="icon-check"><i class="fas fa-users" style="color: #ff904a;"></i> Trabalhar
+                                    em colaboração com o time de Finanças e Tecnologia</div>
+                            </li>
+                        </ul>
+
+                        <!-- Lista de Etapas do Processo Seletivo -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>Quais etapas desse processo seletivo?</h5>
+                                <div class="icon-check"><i class="fas fa-file-alt" style="color: #ff904a;"></i> Cadastro
+                                </div>
+                                <div class="icon-check"><i class="fas fa-user-check" style="color: #ff904a;"></i>
+                                    Análise do seu perfil</div>
+                                <div class="icon-check"><i class="fas fa-comments" style="color: #ff904a;"></i>
+                                    Entrevistas</div>
+                                <div class="icon-check"><i class="fas fa-handshake" style="color: #ff904a;"></i>
+                                    Proposta</div>
+                            </li>
+                        </ul>
+
+                        <!-- Lista de Benefícios -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>Quais os benefícios?</h5>
+                                <div class="icon-check"><i class="fas fa-medkit" style="color: #ff904a;"></i>
+                                    Assistência Médica/Odontológica</div>
+                                <div class="icon-check"><i class="fas fa-bus" style="color: #ff904a;"></i> Vale
+                                    Transporte/Vale Refeição</div>
+                                <div class="icon-check"><i class="fas fa-dumbbell" style="color: #ff904a;"></i> Gympass
+                                </div>
+                                <div class="icon-check"><i class="fas fa-chart-line" style="color: #ff904a;"></i> PLR
+                                    (Participação nos Lucros e Resultados)</div>
+                            </li>
+                        </ul>
+
+
+                        <!-- Acessibilidade para PCD -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>A empresa tem Acessibilidade para PCD?</h5>
+                                <div class="icon-check">
+                                    <i class="fas fa-wheelchair" style="color: #ff904a;"></i> Acessos a ambientes
+                                    adaptados e estacionamento para veículos adaptados
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Descrição adicional -->
+                        <p class="container lead text-left">
+                            Por aqui, nós construímos o futuro da mobilidade sustentável todos os dias. Vem com a gente?
+                        </p>
+
+                        <!-- Botão de Candidatura -->
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit" id="btn-geral"
+                                        data-bs-dismiss="modal"
+                                        onclick="window.location.href='cadastroCandidatos.html'">Cadastre-se</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal 02-->
+        <div class="modal fade" id="modalCard02" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content shadow">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <!-- Lista de Requisitos -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>O que você precisa para se candidatar?</h5>
+                                <div class="icon-check">
+                                    <i class="fas fa-user-md" style="color: #ff904a;"></i> Curso completo de Auxiliar de
+                                    Enfermagem
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-id-badge" style="color: #ff904a;"></i> COREN ativo
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-syringe" style="color: #ff904a;"></i> Candidato selecionado deverá
+                                    estar vacinado com todas as doses contra a COVID19
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Lista de Etapas do Processo Seletivo -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>Quais etapas desse processo seletivo?</h5>
+                                <div class="icon-check">
+                                    <i class="fas fa-file-alt" style="color: #ff904a;"></i> Cadastro
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-search" style="color: #ff904a;"></i> Análise do seu perfil
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-comments" style="color: #ff904a;"></i> Entrevistas
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-file-signature" style="color: #ff904a;"></i> Proposta
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Lista de Benefícios -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>Quais os benefícios?</h5>
+                                <div class="icon-check">
+                                    <i class="fas fa-medkit" style="color: #ff904a;"></i> Assistência
+                                    Médica/Odontológica
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-bus" style="color: #ff904a;"></i> Vale Transporte/Vale Refeição
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-dumbbell" style="color: #ff904a;"></i> Gympass
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-baby" style="color: #ff904a;"></i> Auxílio creche
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Acessibilidade para PCD -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>A empresa tem Acessibilidade para PCD?</h5>
+                                <div class="icon-check">
+                                    <i class="fas fa-wheelchair" style="color: #ff904a;"></i> Não informado.
+                                </div>
+                            </li>
+                        </ul>
+
+
+                        <p class="container lead text-left">
+                            Por aqui, nós construímos o futuro da mobilidade sustentável todos os dias. Vem com a gente?
+                        </p>
+
+                        <!-- Botão de Candidatura -->
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit" id="btn-geral"
+                                        data-bs-dismiss="modal"
+                                        onclick="window.location.href='cadastroCandidatos.html'">Candidate-se</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 03 -->
+        <div class="modal fade" id="modalCard03" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content shadow">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <!-- Lista de Requisitos -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>O que você precisa para se candidatar?</h5>
+                                <div class="icon-check">
+                                    <i class="fas fa-check" style="color: #ff904a;"></i> Completo em Economia, Ciências
+                                    Contábeis, Administração ou Engenharia
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-check" style="color: #ff904a;"></i> Inglês fluente
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-check" style="color: #ff904a;"></i> Trabalhar em colaboração com o
+                                    time de Finanças e Tecnologia
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Lista de Etapas do Processo Seletivo -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>Quais etapas desse processo seletivo?</h5>
+                                <div class="icon-check">
+                                    <i class="fas fa-file-alt" style="color: #ff904a;"></i> Cadastro
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-search" style="color: #ff904a;"></i> Análise do seu perfil
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-comments" style="color: #ff904a;"></i> Entrevistas
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-file-signature" style="color: #ff904a;"></i> Proposta
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Lista de Benefícios -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>Quais os benefícios?</h5>
+                                <div class="icon-check">
+                                    <i class="fas fa-medkit" style="color: #ff904a;"></i> Assistência
+                                    Médica/Odontológica
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-bus" style="color: #ff904a;"></i> Vale Transporte/Vale Refeição
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-dumbbell" style="color: #ff904a;"></i> Gympass
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-chart-line" style="color: #ff904a;"></i> PLR (Participação nos
+                                    Lucros e Resultados)
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Acessibilidade para PCD -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>A empresa tem Acessibilidade para PCD?</h5>
+                                <div class="icon-check">
+                                    <i class="fas fa-wheelchair" style="color: #ff904a;"></i> Acessos a ambientes
+                                    adaptados e estacionamento para veículos adaptados.
+                                </div>
+                            </li>
+                        </ul>
+
+
+                        <p class="container lead text-left">
+                            Por aqui, nós construímos o futuro da mobilidade sustentável todos os dias. Vem com a gente?
+                        </p>
+
+                        <!-- Botão de Candidatura -->
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit" id="btn-geral"
+                                        data-bs-dismiss="modal"
+                                        onclick="window.location.href='cadastroCandidatos.html'">Candidate-se</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 04 -->
+        <div class="modal fade" id="modalCard04" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content shadow">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Lista de Requisitos -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>O que você precisa para se candidatar?</h5>
+                                <div class="icon-check">
+                                    <i class="fas fa-prescription-bottle" style="color: #ff904a;"></i> Graduação em
+                                    Farmácia
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-flask" style="color: #ff904a;"></i> Experiência em farmácia
+                                    hospitalar
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-users" style="color: #ff904a;"></i> Habilidade para trabalhar em
+                                    equipe multidisciplinar
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Lista de Etapas do Processo Seletivo -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>Quais etapas desse processo seletivo?</h5>
+                                <div class="icon-check">
+                                    <i class="fas fa-file-alt" style="color: #ff904a;"></i> Cadastro
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-search" style="color: #ff904a;"></i> Análise do seu perfil
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-comments" style="color: #ff904a;"></i> Entrevistas
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-file-signature" style="color: #ff904a;"></i> Proposta
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Lista de Benefícios -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>Quais os benefícios?</h5>
+                                <div class="icon-check">
+                                    <i class="fas fa-medkit" style="color: #ff904a;"></i> Plano de Saúde
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-bus" style="color: #ff904a;"></i> Vale Transporte
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-dumbbell" style="color: #ff904a;"></i> Gym Pass
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-chart-line" style="color: #ff904a;"></i> Participação nos Lucros
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Acessibilidade para PCD -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>O hospital oferece acessibilidade para PCD?</h5>
+                                <div class="icon-check">
+                                    <i class="fas fa-wheelchair" style="color: #ff904a;"></i> Acessos adaptados e
+                                    estacionamento para veículos adaptados.
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+                        <p class="container lead text-left">
+                            Por aqui, nós construímos o futuro da mobilidade sustentável todos os dias. Vem com a gente?
+                        </p>
+                        <!-- Botão de Candidatura -->
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit" id="btn-geral"
+                                        data-bs-dismiss="modal"
+                                        onclick="window.location.href='cadastroCandidatos.html'">Candidate-se</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalCard05" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content shadow">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Lista de Requisitos -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>O que você precisa para se candidatar?</h5>
+
+                                <div class="icon-check">
+                                    <i class="fas fa-laptop-code" style="color: #ff904a;"></i> Graduação em Ciência da
+                                    Computação, Sistemas de Informação ou áreas relacionadas
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-code" style="color: #ff904a;"></i> Experiência em desenvolvimento
+                                    de software
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-users" style="color: #ff904a;"></i> Habilidade para trabalhar em
+                                    equipe de desenvolvimento
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Seção: Etapas do Processo Seletivo -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>Quais etapas desse processo seletivo?</h5>
+                                <!-- Lista de etapas -->
+                                <div class="icon-check">
+                                    <i class="fas fa-file-alt" style="color: #ff904a;"></i> Cadastro
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-search" style="color: #ff904a;"></i> Análise do seu perfil
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-comments" style="color: #ff904a;"></i> Entrevistas
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-file-signature" style="color: #ff904a;"></i> Proposta
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Seção: Benefícios -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>Quais os benefícios?</h5>
+                                <!-- Lista de benefícios -->
+                                <div class="icon-check">
+                                    <i class="fas fa-laptop" style="color: #ff904a;"></i> Laptop fornecido pela empresa
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-coffee" style="color: #ff904a;"></i> Café à vontade
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-medkit" style="color: #ff904a;"></i> Plano de Saúde
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-bus" style="color: #ff904a;"></i> Vale Transporte
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Seção: Acessibilidade para PCD -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>A empresa tem Acessibilidade para PCD?</h5>
+                                <!-- Informação sobre acessibilidade para PCD -->
+                                <div class="icon-check">
+                                    <i class="fas fa-wheelchair" style="color: #ff904a;"></i> Acessos adaptados e
+                                    estacionamento para veículos adaptados.
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+
+
+
+
+                        <!-- Seção: Descrição adicional -->
+                        <p class="container lead text-left">
+                            Por aqui, nós construímos o futuro da mobilidade sustentável todos os dias. Vem com a gente?
+                        </p>
+
+                        <!-- Botão de Candidatura -->
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit" id="btn-geral"
+                                        data-bs-dismiss="modal"
+                                        onclick="window.location.href='cadastroCandidatos.html'">Candidate-se</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 06 -->
+        <div class="modal fade" id="modalCard06" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content shadow">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <!-- Seção: Requisitos -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>O que você precisa para se candidatar?</h5>
+                                <!-- Lista de requisitos -->
+                                <div class="icon-check">
+                                    <i class="fas fa-graduation-cap" style="color: #ff904a;"></i> Ensino médio completo
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-file-excel" style="color: #ff904a;"></i> Pacote Office - Excel -
+                                    Nível Básico
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-chart-line" style="color: #ff904a;"></i> PLR (Participação nos
+                                    Lucros e Resultados)
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Seção: Etapas do Processo Seletivo -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>Quais etapas desse processo seletivo?</h5>
+                                <!-- Lista de etapas -->
+                                <div class="icon-check">
+                                    <i class="fas fa-file-alt" style="color: #ff904a;"></i> Cadastro
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-search" style="color: #ff904a;"></i> Análise do seu perfil
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-comments" style="color: #ff904a;"></i> Entrevistas
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-file-signature" style="color: #ff904a;"></i> Proposta
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Seção: Benefícios -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>Quais os benefícios?</h5>
+                                <!-- Lista de benefícios -->
+                                <div class="icon-check">
+                                    <i class="fas fa-medkit" style="color: #ff904a;"></i> Assistência
+                                    Médica/Odontológica
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-bus" style="color: #ff904a;"></i> Vale Transporte/Vale Refeição
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-dumbbell" style="color: #ff904a;"></i> Gympass
+                                </div>
+                                <div class="icon-check">
+                                    <i class="fas fa-chart-line" style="color: #ff904a;"></i> PLR (Participação nos
+                                    Lucros e Resultados)
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Seção: Acessibilidade para PCD -->
+                        <ul class="list-group m-2 w-75 container lead text-left">
+                            <li class="list-group-item">
+                                <h5>A empresa tem Acessibilidade para PCD?</h5>
+                                <!-- Informação sobre acessibilidade para PCD -->
+                                <div class="icon-check">
+                                    <i class="fas fa-wheelchair" style="color: #ff904a;"></i> Acessos a ambientes
+                                    adaptados e estacionamento para veículos adaptados.
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Seção: Descrição adicional -->
+                        <p class="container lead text-left">
+                            Por aqui, nós construímos o futuro da mobilidade sustentável todos os dias. Vem com a gente?
+                        </p>
+
+                        <!-- Botão de Candidatura -->
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit" id="btn-geral"
+                                        data-bs-dismiss="modal"
+                                        onclick="window.location.href='cadastroCandidatos.html'">Candidate-se</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+               <!-- Footer Start -->
+               <div class="container-fluid custom-bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+                <div class="container py-5 px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-md-6 col-lg-3">
+                            <p class="section-title text-white h5 mb-4">Address<span></span></p>
+                            <p><i class="fa fa-map-marker-alt me-3"></i>+55 Brasil, BR.</p>
+                            <p><i class="fa fa-phone-alt me-3"></i>+55 9-9999-9999</p>
+                            <p><i class="fa fa-envelope me-3"></i>squad10manha2023<br>recodepro@gmail.com</p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/rederecode/"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://github.com/N-O-V-A-RecodePro2023"><i class="fab fa-github"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="mailto:squad10manha2023recodepro@gmail.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
+
+                            <li class="mx-2" data-filter=".third">Indústria</li>
+                        </ul>
+                    </nav>
+                    <div class="row g-4 portfolio-container">
+                        <article class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="rounded overflow-hidden">
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/vagas01.png"
+                                        alt="Imagem representativa da vaga de Promotor de Vendas">
+                                    <div class="portfolio-overlay">
+                                        <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg"
+                                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        <a class="btn btn-square btn-outline-light mx-1" href="vagas.html"><i
+                                                class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                                <div class="bg-light p-4">
+                                    <p class="text-primary fw-medium mb-2">Promotor de Vendas</p>
+                                    <h5 class="lh-base mb-0">CLT | ASSISTÊNCIA MÉDICA | VT/VR | GYMPASS | PLR</h5>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="rounded overflow-hidden">
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/vagas02.jpg"
+                                        alt="Imagem representativa da vaga de Técnico de Enfermagem">
+                                    <div class="portfolio-overlay">
+                                        <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg"
+                                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        <a class="btn btn-square btn-outline-light mx-1" href="vagas.html"><i
+                                                class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                                <div class="bg-light p-4">
+                                    <p class="text-primary fw-medium mb-2">Técnico em Enfermagem</p>
+                                    <h5 class="lh-base mb-0">CLT | VA/VT | ASSISTÊNCIA MÉDICA | GYMPASS</h5>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 portfolio-item third wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="rounded overflow-hidden">
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/vagas03.jpg"
+                                        alt="Imagem representativa da vaga de Assitente Financeiro Sênior">
+                                    <div class="portfolio-overlay">
+                                        <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-3.jpg"
+                                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        <a class="btn btn-square btn-outline-light mx-1" href="vagas.html"><i
+                                                class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                                <div class="bg-light p-4">
+                                    <p class="text-primary fw-medium mb-2">Assistente Financeiro Sênior</p>
+                                    <h5 class="lh-base mb-0">VR/VA | ASSISTÊNCIA MÉDICA | GYMPASS | VT | PLR</h5>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="rounded overflow-hidden">
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/vagas04.jpg"
+                                        alt="Imagem representativa da vaga de Farmacêutico Hopitalar">
+                                    <div class="portfolio-overlay">
+                                        <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-4.jpg"
+                                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        <a class="btn btn-square btn-outline-light mx-1" href="vagas.html"><i
+                                                class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                                <div class="bg-light p-4">
+                                    <p class="text-primary fw-medium mb-2">Farmacêutico Hopitalar</p>
+                                    <h5 class="lh-base mb-0">Digital Agency Website Design And Development</h5>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="rounded overflow-hidden">
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/vagas05.png"
+                                        alt="Imagem representativa da vaga de Desenvolvedor Júnior">
+                                    <div class="portfolio-overlay">
+                                        <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-5.jpg"
+                                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        <a class="btn btn-square btn-outline-light mx-1" href="vagas.html"><i
+                                                class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                                <div class="bg-light p-4">
+                                    <p class="text-primary fw-medium mb-2">Desenvolvedor JR</p>
+                                    <h5 class="lh-base mb-0">Digital Agency Website Design And Development</h5>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 col-md-6 portfolio-item third wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="rounded overflow-hidden">
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/vagas06.jpg"
+                                        alt="Imagem representativa da vaga de Promotor de Vendas">
+                                    <div class="portfolio-overlay">
+                                        <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg"
+                                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        <a class="btn btn-square btn-outline-light mx-1" href="vagas.html"><i
+                                                class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                                <div class="bg-light p-4">
+                                    <p class="text-primary fw-medium mb-2">Promotor de Vendas</p>
+                                    <h5 class="lh-base mb-0">CLT | ASSISTÊNCIA MÉDICA | VT/VR | GYMPASS | PLR</h5>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Banner de Vagas End -->
+
+        </div>
+
+        <!-- Footer Start -->
+        <footer class="container-fluid custom-bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <!-- Address Section -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-section">
+                            <p class="section-title text-white h5 mb-4">Address<span></span></p>
+                            <p><i class="fa fa-map-marker-alt me-3"></i>+55 Brasil, BR.</p>
+                            <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                            <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                            <div class="social-links d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links Section -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-section">
+                            <p class="section-title text-white h5 mb-4">Quick Links<span></span></p>
+
+                            <a class="btn btn-link" href="sobre.html">About Us</a>
+                            <a class="btn btn-link" href="contato.html">Contact Us</a>
+                            <a class="btn btn-link" href="privacidade.html">Privacy Policy</a>
+                            <a class="btn btn-link" href="vagas.html">Career</a>
+                        </div>
+
+
+                        <div class="col-md-6 col-lg-3">
+                            <p class="section-title text-white h5 mb-4">Contato<span></span></p>
+                            <p>Para qualquer dúvida, nos contate!</p>
+                            <div class="position-relative w-100 mt-3">
+                                <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                                    placeholder="Seu E-mail" style="height: 48px;">
+                                <button type="button"
+                                    class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                        class="fa fa-paper-plane text-primary fs-4"></i></button>
+                            </div> </div>
+
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="https://github.com/N-O-V-A-RecodePro2023">Squad
+                                10</a>, 2023 © Todos os Direitos Reservados
+
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="contato.html">Help</a>
+
+                            </div>
+                        </div>
+                    </div></div></div></div>
+                
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
+    <script>
+        avisoCookiesDrcode({})
+    </script>
+    <script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
+    <script>
+        avisoCookiesDrcode({
+            message: 'Utilizamos cookies para que você tenha a melhor experiência em nosso site. Para saber mais acesse nossa página de Política de Privacidade',
+            backgroundColor: 'rgba(255,255,255,0.95)',
+            textColor: '#666666',
+            buttonBackgoundColor: '#0e9a20',
+            buttonHoverBackgoundColor: '#0a6b16',
+            buttonTextColor: '#ffffff'
+        })
+    </script>
+</body>
+
+</html>
+
+                    </div>
+
+                    <!-- Contact Section -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-section">
+                            <p class="section-title text-white h5 mb-4">Contact<span></span></p>
+                            <p>Para qualquer dúvida, nos contate!</p>
+                            <div class="subscribe-form position-relative w-100 mt-3">
+                                <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                                    placeholder="Seu E-mail" style="height: 48px;">
+                                <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                        class="fa fa-paper-plane text-primary fs-4"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Copyright Section -->
+                    <div class="container px-lg-5">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <div class="row">
+                                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                        &copy; <a class="border-bottom"
+                                            href="https://github.com/N-O-V-A-RecodePro2023">Squad
+                                            10</a>, 2023 © Todos os Direitos Reservados
+                                    </div>
+                                    <div class="col-md-6 text-center text-md-end">
+                                        <div class="footer-menu">
+                                            <a href="index.html">Home</a>
+                                            <a href="">Cookies</a>
+                                            <a href="contato.html">Help</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>
+

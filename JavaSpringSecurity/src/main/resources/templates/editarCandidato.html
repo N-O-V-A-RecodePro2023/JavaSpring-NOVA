@@ -48,7 +48,7 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="index.html" class="navbar-brand p-0">
+                <a href="/index.html" class="navbar-brand p-0">
                     <img src="/img/LogoNOVA.png" alt="Descrição da imagem" style="float: left; margin-right: 10px;">
                     <h1 class="m-0">N.O.V.A</h1>
                 </a>
@@ -57,20 +57,21 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="sobre.html" class="nav-item nav-link">Sobre Nós</a>
-                        <a href="depoimentos.html" class="nav-item nav-link">Depoimentos</a>
-                        <a href="cursos.html" class="nav-item nav-link">Cursos</a>
-                        <a href="/vagas.html" class="nav-item nav-link">Vagas</a>
-                        <a href="/contato/novo" class="nav-item nav-link">Contato</a>
+								<li class="nav-item"><a href="/sobre.html" class="nav-link">Sobre Nós</a></li>
+                       		    <li class="nav-item"><a href="/depoimentos.html" class="nav-link">Depoimentos</a></li>
+                        		<li class="nav-item"><a href="/cursos.html" class="nav-link">Cursos</a></li>
+                        		<li class="nav-item"><a href="/vagas/vagas" class="nav-link">Vagas</a></li>
+                       			<li class="nav-item"><a href="/contato/novo" class="nav-link">Contato</a></li>
+                       			
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cadastre-se</a>
                             <div class="dropdown-menu m-0">
-                               <a class="dropdown-item" th:href="@{/empresa/novo}">Empresas</a>
-                                <a class="dropdown-item" th:href="@{/candidato/novo}">Candidatos</a>
+                               <a class="dropdown-item" href="/empresa/novo">Empresas</a>
+										<a class="dropdown-item" href="/candidato/novo">Candidatos</a>
                             </div>
                         </div>
                     </div>
-                    <a href="/login" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Entrar</a>
+                    <a href="/login/login" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Entrar</a>
                 </div>
             </nav>
 
@@ -87,7 +88,7 @@
 										</li>
                                     <li class="breadcrumb-item"><a class="text-white" th:href="@{/candidato/candidatoPerfil/{id}(id=${candidato.id})}">Seu
                                             Perfil</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Cadastro</li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="/candidato/novo">Cadastro</a>
                                 </ol>
                             </nav>
                         </div>

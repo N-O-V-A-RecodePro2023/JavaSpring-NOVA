@@ -315,7 +315,6 @@ h6,
     margin-top: -15px;
 }
 
-
 /*** About ***/
 .progress {
     height: 5px;
@@ -325,6 +324,7 @@ h6,
     width: 0px;
     transition: 3s;
 }
+
 
 
 
@@ -421,6 +421,17 @@ h6,
 
 }
 
+
+.hero-header {
+    position: relative;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
 /*** Project Portfolio ***/
 #portfolio-flters li {
     display: inline-block;
@@ -480,6 +491,174 @@ h6,
         right 0px bottom 0px,
         center center;
     background-repeat: no-repeat;
+}
+
+
+
+/* Estilização geral para a seção de vagas */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+/* Estilo para a sobreposição da imagem */
+.portfolio-item .position-relative {
+    position: relative;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay a {
+    font-size: 24px;
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Estilização geral para a seção de vagas */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+/* Estilo para a sobreposição da imagem */
+.portfolio-item .position-relative {
+    position: relative;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay a {
+    font-size: 24px;
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Estilo para a seção de informações da vaga */
+.bg-light {
+    background-color: #f8f9fa;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Estilização adicional para os ícones abaixo do nome da vaga */
+.icons-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+    color: rgb(83, 82, 87);
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.icon img {
+    width: 24px; /* Ajuste o tamanho dos ícones conforme necessário */
+    height: 24px;
+    margin-right: 5px;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #333;
+}
+
+/* Aumentar o tamanho da fonte do nome das vagas */
+.bg-light p.text-primary {
+    font-size: 20px; 
+}
+
+/* Centralizar o botão "Saiba Mais" */
+.custom-btn {
+    display: block;
+    margin: 15px auto 0;; 
+}
+
+/* Estilos para o botão "Saiba Mais" nos cards */
+.custom-btn,
+.btn-primary {
+    background: #ff904a;
+    border-color: #ff904a;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.custom-btn:hover,
+.btn-primary:hover {
+    background-color: #d17a41;
+    border-color: #d17a41;
+}
+
+/* Estilos para os modais */
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #ff904a;
+    color: white;
+    border-bottom: 2px solid #d17a41;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-body,
+.modal-footer {
+    color: #333;
+}
+
+.modal-footer {
+    border-top: 2px solid #d17a41;
 }
 
 

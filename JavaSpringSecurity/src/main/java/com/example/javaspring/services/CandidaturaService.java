@@ -1,8 +1,10 @@
 package com.example.javaspring.services;
 
 import com.example.javaspring.model.Candidatura;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 
 public interface CandidaturaService {
 

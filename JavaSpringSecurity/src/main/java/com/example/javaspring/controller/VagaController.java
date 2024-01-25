@@ -22,15 +22,24 @@ public class VagaController {
     @PostMapping("/cadastro")
     public String saveVaga(@ModelAttribute ("vaga") Vaga vaga){
         Vaga savedVaga = vagaService.saveVaga(vaga);
-        return "redirect:/vagas" + savedVaga.getIdVaga();
+        return "redirect:/vagas/vagas/";
     }
+
     //Ver a vaga por id
     @GetMapping("/vaga/{idVaga}")
     public String showVaga(@PathVariable("idVaga") Integer idVaga, Model model){
         Vaga vaga =  vagaService.getVagaById(idVaga);
         model.addAttribute("vaga", vaga);
-        return "vaga";
+        return "vagas";
     }
+
+    @GetMapping("/novo")
+    public String showFormForAdd(Model model){
+        Vaga vaga = new Vaga();
+        model.addAttribute("vaga", vaga);
+        return "cadastroVaga";
+    }
+
 
     //ver a lista de todas as vagas
     @GetMapping("/vagas")
@@ -39,6 +48,7 @@ public class VagaController {
         model.addAttribute("vaga", vaga);
         return "vagas";
     }
+    
 
     //Mostrar o form de edição
     @GetMapping("/editar/{idVaga}")

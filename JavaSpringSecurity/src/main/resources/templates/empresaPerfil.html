@@ -45,54 +45,43 @@
         <!-- Spinner End -->
 
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
+        <!-- Navbar Start -->
+        <header>
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="/index.html" class="navbar-brand p-0">
-                    <img src="/img/LogoNOVA.png" alt="Descrição da imagem" style="float: left; margin-right: 10px;">
-                    <h1 class="m-0">N.O.V.A</h1>
+                <h2 class="nocontent d-none"> Barra de Navegação </h2>
+                <a href="index.html" class="navbar-brand p-0">
+                    <figure class="m-0">
+                        <img src="/img/LogoNOVA.png" alt="Logotipo N.O.V.A" style="float: left; margin-right: 10px;">
+                        <h1 class="m-0">N.O.V.A</h1>
+                    </figure>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="sobre.html" class="nav-item nav-link">Sobre Nós</a>
-                        <a href="depoimentos.html" class="nav-item nav-link">Depoimentos</a>
-                        <a href="cursos.html" class="nav-item nav-link">Cursos</a>
-                        <a href="/vagas.html" class="nav-item nav-link">Vagas</a>
-                        <a href="/contato/novo" class="nav-item nav-link">Contato</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cadastre-se</a>
-                            <div class="dropdown-menu m-0">
-                               <a class="dropdown-item" th:href="@{/empresa/novo}">Empresas</a>
-                                <a class="dropdown-item" th:href="@{/candidato/novo}">Candidatos</a>
-                            </div>
-                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+                            <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                            <li class="nav-item"><a href="/vagas/vagas" class="nav-link">Vagas</a></li>
+                            <li class="nav-item"><a href="/contato/novo" class="nav-link">Contato</a></li>
+
+
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cadastre-se</a>
+                                <div class="dropdown-menu m-0">
+                                    <a class="dropdown-item" href="/empresa/novo">Empresas</a>
+                                    <a class="dropdown-item" href="/candidato/novo">Candidatos</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <a href="/login" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Entrar</a>
+                    <a href="/login/login" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block" role="button">Entrar</a>
                 </div>
             </nav>
-
-            <div class="container-xxl py-5 hero-header" style="background-color: #257f88ff;">
-                <div class="container my-5 py-5 px-lg-5">
-                    <div class="row g-5 py-5">
-                        <div class="col-12 text-center">
-                            <h1 class="text-white animated slideInDown">Perfil da Empresa </h1>
-                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="/index.html">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" th:href="@{/empresa/editar/{id}(id=${empresa.id})}">Editar Perfil</a></li>
-                                     <li class="breadcrumb-item"><a class="text-white" href="/empresa/novo">Cadastro</a></li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Navbar & Hero End -->
+        </header>
+        <!-- Navbar end-->
 
             <!-- Perfil Start -->
             <div class="container-xxl py-5">
@@ -238,11 +227,17 @@
                                                             type="submit" th:href="@{/empresa/editar/{id}(id=${empresa.id})}">Atualizar</a>
                                                             		      
                                                     </div>
+
+                                            <div class="col-12">
+                                            <a class="btn btn-primary w-100 py-3" id="btn-geral"
+                                               type="submit" th:href="@{/vagas/novo}">Cadastrar vaga</a>
+
+                                            </div>
                                                 
-                                                <div class="col-12">
+                                            <div class="col-12">
                                                     <a class="btn btn-danger w-100 py-3"
                                                         type="submit" th:href="@{/empresa/deletar/{id}(id=${empresa.id})}">Excluir</a>
-                                                </div>
+                                            </div>
                                             
                                 </form>
                             </div>

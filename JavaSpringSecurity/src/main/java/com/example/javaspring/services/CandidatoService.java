@@ -2,7 +2,6 @@ package com.example.javaspring.services;
 
 import com.example.javaspring.model.Candidato;
 
-
 import java.util.List;
 
 public interface CandidatoService {

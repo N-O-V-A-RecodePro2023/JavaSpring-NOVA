@@ -6,7 +6,6 @@
     --dark: #04000B;
 }
 
-
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -38,7 +37,9 @@ h2,
     
 }
 
-h1.mb-5 {
+h1,
+h2,
+.mb-5 {
     color: rgb(27, 97, 103);
 }
 
@@ -344,11 +345,11 @@ h6,
         right 0px bottom 0px,
         center center;
     background-repeat: no-repeat;
-    background-color: (var(--primary));
+    background-color: ((var--primary));
 }
 
 .custom-bg-primary {
-    background-color: #257f88ff; /* Cor de fundo personalizada */
+    background-color: #257f88ff; 
 }
 
 
@@ -379,6 +380,7 @@ h6,
     background: url(../img/blob-primary.png)  center center no-repeat;
     background-size: contain;
     transition: .5s;
+   
    
 }
 
@@ -505,7 +507,7 @@ video {
     margin-bottom: 30px;
 }
 
-/* Estilo para a sobreposição da imagem */
+
 .portfolio-item .position-relative {
     position: relative;
 }
@@ -545,7 +547,7 @@ video {
     margin-bottom: 30px;
 }
 
-/* Estilo para a sobreposição da imagem */
+
 .portfolio-item .position-relative {
     position: relative;
 }
@@ -575,7 +577,7 @@ video {
     text-decoration: none;
 }
 
-/* Estilo para a seção de informações da vaga */
+
 .bg-light {
     background-color: #f8f9fa;
     border-radius: 0 0 10px 10px;
@@ -600,28 +602,26 @@ video {
 }
 
 .icon img {
-    width: 24px; /* Ajuste o tamanho dos ícones conforme necessário */
-    height: 24px;
+    width: 30px;
+    height: 30px;
     margin-right: 5px;
 }
 
 .small-text {
-    font-size: 12px;
+    font-size: 15px;
     color: #333;
 }
 
-/* Aumentar o tamanho da fonte do nome das vagas */
 .bg-light p.text-primary {
     font-size: 20px; 
 }
 
-/* Centralizar o botão "Saiba Mais" */
+
 .custom-btn {
     display: block;
     margin: 15px auto 0;; 
 }
 
-/* Estilos para o botão "Saiba Mais" nos cards */
 .custom-btn,
 .btn-primary {
     background: #ff904a;
@@ -636,7 +636,6 @@ video {
     border-color: #d17a41;
 }
 
-/* Estilos para os modais */
 .modal-content {
     background-color: #fff;
     border-radius: 10px;
@@ -789,9 +788,6 @@ video {
 }
 
 .custom-bg-primary {
-    background-color: var(--primary) /* Cor de fundo personalizada */
+    background-color: var(--primary) 
 }
 
-#btn-geral {
-        background-color: var(--secondary)
-}

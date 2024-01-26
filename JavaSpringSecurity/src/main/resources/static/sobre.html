@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
-
     <title>N.O.V.A</title>
-
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -16,7 +14,6 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
         rel="stylesheet">
 
@@ -39,7 +36,27 @@
     <link rel="import" href="vlibras.html">
     <script src="https://cdn.userway.org/widget.js" data-account="09FcxZNn6a"></script>
     <script src="acessibilidade.js"></script>
+</head>
 
+<!-- Acessibilidade-->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<style>
+    .access-button {
+        border-radius: 50px;
+    }
+</style>
+
+<script src="https://cdn.userway.org/widget.js" data-account="09FcxZNn6a"></script>
+<script src="acessibilidade.js"></script>
 </head>
 
 <body>
@@ -53,346 +70,450 @@
         </div>
         <!-- Spinner End -->
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0" role="navigation">
-                <a href="index.html" class="navbar-brand p-0">
-                    <img src="img/LogoNOVA.png" alt="Logo da N.O.V.A" style="float: left; margin-right: 10px;">
-                    <h1 class="m-0">N.O.V.A</h1>
+        <header class="container-xxl position-relative p-0">
+            <!-- Navigation Start -->
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0" role="navigation"
+                aria-label="Main Navigation">
+                <h2 class="nocontent d-none"> Barra de Navegação </h2>
+                <a href="index.html" class="navbar-brand p-0" aria-label="Link to Home">
+                    <figure class="m-0">
+                        <img src="img/LogoNOVA.png" alt="Logotipo N.O.V.A" style="float: left; margin-right: 10px;">
+                        <h1 class="m-0">N.O.V.A</h1>
+                    </figure>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="fa fa-bars"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto py-0">
-                        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
-                        <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
-                        <li class="nav-item"><a href="cursos.html" class="nav-link">Cursos</a></li>
-                        <li class="nav-item"><a href="/vagas/vagas" class="nav-link">Vagas</a></li>
-                       <li class="nav-item"><a href="/contato/novo" class="nav-link">Contato</a></li>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cadastre-se</a>
-                            <div class="dropdown-menu m-0">
-                                <a class="dropdown-item" href="/empresa/novo">Empresas</a>
-                                <a class="dropdown-item" href="/candidato/novo">Candidatos</a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="/login/login" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Entrar</a>
+                    <ul class="navbar-nav mx-auto py-0">
+                        <li class="nav-item"><a href="sobre.html" class="nav-link" aria-label="Link to About Us">Sobre
+                                Nós</a></li>
+                        <li class="nav-item"><a href="depoimentos.html" class="nav-link"
+                                aria-label="Link to Testimonials">Depoimentos</a></li>
+                        <li class="nav-item"><a href="/vagas/vagas" class="nav-link"
+                                aria-label="Link to Job Openings">Vagas</a></li>
+                        <li class="nav-item"><a href="cursos.html" class="nav-link"
+                                aria-label="Link to Courses">Cursos</a></li>
+                        <li class="nav-item"><a href="/contato/novo" class="nav-link"
+                                aria-label="Link to Contact">Contato</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false"
+                                aria-label="Dropdown for Registration">Cadastre-se</a>
+                            <ul class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
+                                <li><a href="/empresa/novo" class="dropdown-item"
+                                        aria-label="Link to Business Registration">Empresas</a></li>
+                                <li><a href="/candidato/novo" class="dropdown-item"
+                                        aria-label="Link to Candidate Registration">Candidatos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <a href="/login/login" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
+                        aria-label="Link to Login">Entrar</a>
                 </div>
             </nav>
+            <!-- Navigation End -->
+        </header>
 
-            <div class="container-xxl py-5 hero-header" style="background-color: #257f88ff;">
+        <main>
+            <section class="container-xxl py-5 hero-header" style="background-color: #257f88ff;">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated slideInDown">Sobre nós</h1>
+                            <h2 class="text-white animated slideInDown">Sobre Nós</h2>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="cursos.html">Cursos</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Sobre nós</li>
-                                </ol>
-                            </nav>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Navbar & Hero End -->
-  <!-- Feature Start -->
-<div class="container-xxl py-5">
-    <div class="container py-5 px-lg-5">
-        <div class="row g-4">
-            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="feature-item bg-light rounded text-center p-4">
-                    <img src="IMG/card001.png" class="card-img-top rounded-circle" alt="Imagem card Visão">
-                    <p class="m-0">Promovendo inclusão e igualdade, nossa missão é conectar pessoas com deficiência a
-                        oportunidades de emprego significativas e transformadoras.</p>
+            </section>
+
+            <!-- Sobre Nós Start -->
+            <section class="container-xxl py-5">
+                <h2 class="nocontent d-none">Sobre</h2>
+                <div class="container py-5 px-lg-5">
+                    <div class="wow fadeInUp" data-wow-delay="0.1s">
+                        <p class="section-title text-secondary justify-content-center"><span></span>Sobre
+                            nós<span></span>
+                        </p>
+                    </div>
+
+                    <div class="row g-4">
+
+                        <article class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="feature-item bg-light rounded text-center p-4">
+                                <h3 class="nocontent d-none">Missão</h3>
+                                <figure>
+                                    <img src="IMG/card001.png" class="card-img-top rounded-circle"
+                                        alt="Imagem representando a missão da organização">
+                                </figure>
+                                <p class="m-0">Promovendo inclusão e igualdade, nossa missão é conectar pessoas com
+                                    deficiência a oportunidades de emprego significativas e transformadoras.</p>
+                            </div>
+                        </article>
+
+                        <article class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="feature-item bg-light rounded text-center p-4">
+                                <h3 class="nocontent d-none">Visão</h3>
+                                <figure>
+                                    <img src="IMG/card002.png" class="card-img-top rounded-circle"
+                                        alt="Imagem representando a visão da organização">
+                                </figure>
+                                <p class="m-0">Fomentamos uma sociedade em que cada oportunidade de emprego para PCD
+                                    seja um passo
+                                    para um futuro inclusivo e bem-sucedido.</p>
+                            </div>
+                        </article>
+
+                        <article class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="feature-item bg-light rounded text-center p-4">
+                                <h3 class="nocontent d-none">Valores</h3>
+                                <figure>
+                                    <img src="IMG/card003.png" class="card-img-top rounded-circle"
+                                        alt="Imagem representando os valores da organização">
+                                </figure>
+                                <p class="m-0">Guiados pela empatia, ética e colaboração, valorizamos a inclusão, a
+                                    excelência e o
+                                    respeito mútuo em todas as interações e oportunidades.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Sobre Nós End -->
+            <!-- Facts Section Start -->
+            <section class="facts-section container-xxl custom-bg-primary py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h2 class="nocontent d-none">Estatísticas</h2>
+                <div class="container py-5 px-lg-5">
+                    <div class="row g-4">
+
+                        <article class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                            <i class="fa fa-certificate fa-3x text-secondary mb-3"></i>
+                            <h2 class="text-white mb-2" data-toggle="counter-up">7</h2>
+                            <p class="text-white mb-0">Entre 10 PCDs desempregados</p>
+                        </article>
+
+                        <article class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                            <i class="fa fa-users-cog fa-3x text-secondary mb-3"></i>
+                            <h2 class="text-white mb-2" data-toggle="counter-up">700000</h2>
+                            <p class="text-white mb-0">Vagas qualificadas a PCD no BR</p>
+                        </article>
+
+                        <article class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                            <i class="fa fa-users fa-3x text-secondary mb-3"></i>
+                            <h2 class="text-white mb-2" data-toggle="counter-up">6000000</h2>
+                            <p class="text-white mb-0">PCDs desempregados no BR</p>
+                        </article>
+
+                        <article class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                            <i class="fa fa-check fa-3x text-secondary mb-3"></i>
+                            <h2 class="text-white mb-2" data-toggle="counter-up">6</h2>
+                            <p class="text-white mb-0">Cursos de capacitação na N.O.V.A</p>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Facts Section End -->
+            <!-- Empregabilidade Start -->
+            <section class="about-section container-xxl py-5">
+                <div class="container py-5 px-lg-5">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <header class="section-header">
+                                <h6 class="section-title text-secondary">Dados<span></span></h6>
+                            </header>
+
+                            <article>
+                                <h2 class="mb-5">Empregabilidade no Brasil</h2>
+                                <p>
+                                    Pessoas com deficiência representam apenas 1% dos empregos em regime CLT no país e
+                                    no último trimestre
+                                    de 2022, são mais de 13 milhões de desempregados. Dados esses fornecidos pelo módulo
+                                    Pessoas com
+                                    deficiência, da PNAD Contínua 2022. De acordo com a PNS (Pesquisa Nacional de Saúde)
+                                    a taxa de
+                                    participação de PCDs no mercado de trabalho no ano de 2019 era de apenas 28,3%. Além
+                                    disso, há também
+                                    a
+                                    diferença da questão salarial.
+                                </p>
+                            </article>
+
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-2">PCD Empregados</p>
+                                    <p class="mb-2">25%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar custom-bg-primary" role="progressbar" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-2">Pessoas sem deficiência Empregados</p>
+                                    <p class="mb-2">60%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="60"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-2">Rendimento domiciliar total de até 2 salários mínimos por PCD</p>
+                                    <p class="mb-2">34,8%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="34.8"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 34.8%;"></div>
+                                </div>
+                            </div>
+
+                            <a href="https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/0a9afaed04d79830f73a16136dba23b9.pdf"
+                                class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3"
+                                style="background-color: #ff904a; color: #ffffff;">Leia Mais</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <img class="img-fluid wow zoomIn rounded" data-wow-delay="0.5s" src="img/banner_index1.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Empregabilidade End -->
+            <!-- Nosso Time Start -->
+            <section class="container-xxl py-5">
+                <div class="container py-5 px-lg-5">
+                    <div class="wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="section-title text-secondary justify-content-center"><span></span>Nosso
+                            time<span></span></h5>
+                        <h2 class="text-center mb-5">Quem está por trás do projeto</h2>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="row g-4 ">
+                            <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <h3 class="nocontent d-none">Bruna Lorena</h3>
+                                <div class="team-item bg-light rounded">
+                                    <figure class="text-center border-bottom p-4 justify-content-center">
+                                        <img class="img-fluid rounded-circle mb-4" src="img/team_bruna.jpeg"
+                                            alt="Foto de Bruna Lorena">
+                                        <figcaption>
+                                            <h5>Bruna Lorena</h5>
+                                            <span>Dev Full Stack | Front-End | UX Design </span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="d-flex justify-content-center p-4">
+                                        <a class="btn btn-square mx-1" href="https://github.com/gama07"><i
+                                                class="fab fa-github"></i></a>
+                                        <a class="btn btn-square mx-1" href="mailto:brunalorena01@gmail.com"><i
+                                                class="fas fa-envelope"></i></a>
+                                        <a class="btn btn-square mx-1"
+                                            href="https://www.linkedin.com/in/bruna-lorena-46819528a/"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <h3 class="nocontent d-none">Maycon Martins</h3>
+                                <div class="team-item bg-light rounded">
+                                    <figure class="text-center border-bottom p-4">
+                                        <img class="img-fluid rounded-circle mb-4" src="img/team_maycon.jpg"
+                                            alt="Foto de Maycon Martins">
+                                        <figcaption>
+                                            <h5>Maycon Martins</h5>
+                                            <span>Dev Full Stack | Back-End | AWS</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="d-flex justify-content-center p-4">
+                                        <a class="btn btn-square mx-1" href="https://github.com/mikemars0701"><i
+                                                class="fab fa-github"></i></a>
+                                        <a class="btn btn-square mx-1" href="mailto:maycon_martins2017@hotmail.com"><i
+                                                class="fas fa-envelope"></i></a>
+                                        <a class="btn btn-square mx-1"
+                                            href="https://www.linkedin.com/in/maycon-martins-lima/"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <h3 class="nocontent d-none">Natacha Carvalho</h3>
+                                <div class="team-item bg-light rounded">
+                                    <figure class="text-center border-bottom p-4">
+                                        <img class="img-fluid rounded-circle mb-4" src="img/team_natacha.jpeg"
+                                            alt="Foto de Natacha Carvalho">
+                                        <figcaption>
+                                            <h5>Natacha Carvalho</h5>
+                                            <span>Dev Full Stack | Back-End | Java</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="d-flex justify-content-center p-4">
+                                        <a class="btn btn-square mx-1" href="https://github.com/eu1natacha"><i
+                                                class="fab fa-github"></i></a>
+                                        <a class="btn btn-square mx-1" href="mailto:natachacarvalho90@gmail.com"><i
+                                                class="fas fa-envelope"></i></a>
+                                        <a class="btn btn-square mx-1"
+                                            href="https://www.linkedin.com/in/natacha-carvalho//"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <h3 class="nocontent d-none">Natália Marques</h3>
+                                <div class="team-item bg-light rounded">
+                                    <figure class="text-center border-bottom p-4">
+                                        <img class="img-fluid rounded-circle mb-4" src="img/team_nataliam.jpg"
+                                            alt="Foto de Natália Marques">
+                                        <figcaption>
+                                            <h5>Natália Marques</h5>
+                                            <span>Dev Full Stack | Front-End</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="d-flex justify-content-center p-4">
+                                        <a class="btn btn-square mx-1" href="https://github.com/Natalia203"><i
+                                                class="fab fa-github"></i></a>
+                                        <a class="btn btn-square mx-1" href="mailto:natalia.mq203@gmail.com"><i
+                                                class="fas fa-envelope"></i></a>
+                                        <a class="btn btn-square mx-1"
+                                            href="https://www.linkedin.com/in/natália-marques-2a1763186/"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <h3 class="nocontent d-none">Natalia Rodrigues</h3>
+                                <div class="team-item bg-light rounded">
+                                    <figure class="text-center border-bottom p-4">
+                                        <img class="img-fluid rounded-circle mb-4" src="img/team_nataliar.jpg"
+                                            alt="Foto de Natalia Rodrigues">
+                                        <figcaption>
+                                            <h5>Natalia Rodrigues</h5>
+                                            <span>Dev Full Stack | Front-End | Dados</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="d-flex justify-content-center p-4">
+                                        <a class="btn btn-square mx-1" href="https://github.com/nataliarodrxgues"><i
+                                                class="fab fa-github"></i></a>
+                                        <a class="btn btn-square mx-1" href="mailto:seu-email@dominio.com"><i
+                                                class="fas fa-envelope"></i></a>
+                                        <a class="btn btn-square mx-1"
+                                            href="https://www.linkedin.com/in/nataliarodrxgues/"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Nosso Time End -->
+        </main>
+
+        <!-- Footer -->
+        <footer class="container-fluid custom-bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <section class="col-md-6 col-lg-3">
+                        <h2 class="section-title text-white h5 mb-4">Endereço</h2>
+                        <address>
+                            <p><i class="fa fa-map-marker-alt me-3"></i>+55 Brasil, BR.</p>
+                            <p><i class="fa fa-phone-alt me-3"></i>+55 9-9999-9999</p>
+                            <p><i class="fa fa-envelope me-3"></i>squad10manha2023<br>recodepro@gmail.com</p>
+                        </address>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social"
+                                href="https://www.linkedin.com/company/rederecode/"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social"
+                                href="https://github.com/N-O-V-A-RecodePro2023"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-outline-light btn-social"
+                                href="mailto:squad10manha2023recodepro@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </section>
+
+                    <section class="col-md-6 col-lg-3">
+                        <h2 class="section-title text-white h5 mb-4">Links Rápidos</h2>
+                        <nav>
+                            <h2 class="nocontent d-none"> Lista Links Rápidos </h2>
+                            <a class="btn btn-link" href="sobre.html">Sobre nós</a>
+                            <a class="btn btn-link" href="/contato/novo">Contate-nos</a>
+                            <a class="btn btn-link" href="privacidade.html">Politica de Privacidade</a>
+                            <a class="btn btn-link" href="/vagas/vagas">Vagas</a>
+                        </nav>
+                    </section>
+
+                    
+
+                    <section class="container px-lg-5">
+                        <h2 class="nocontent d-none"> Direitos Reservados </h2>
+                        <div class="copyright">
+                            <div class="row">
+                                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                    &copy; <a class="border-bottom"
+                                        href="https://github.com/N-O-V-A-RecodePro2023">Squad
+                                        10</a>, 2023 © Todos os Direitos Reservados
+                                </div>
+                                <div class="col-md-6 text-center text-md-end">
+                                    <div class="footer-menu">
+                                        <a href="index.html">Home</a>
+                                        <a href="">Cookies</a>
+                                        <a href="contato.html">Ajuda</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
             </div>
-            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="feature-item bg-light rounded text-center p-4">
-                    <img src="IMG/card002.png" class="card-img-top rounded-circle" alt="Imagem card Visão">
-                    <p class="m-0">Fomentamos uma sociedade em que cada oportunidade de emprego para PCD seja um
-                        passo para um futuro inclusivo e bem-sucedido.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="feature-item bg-light rounded text-center p-4">
-                    <img src="IMG/card003.png" class="card-img-top rounded-circle" alt="Imagem card Visão">
-                    <p class="m-0">Guiados pela empatia, ética e colaboração, valorizamos a inclusão, a excelência e o
-                        respeito mútuo em todas as interações e oportunidades.</p>
-                </div>
-            </div>
-        </div>
+        </footer>
+        <!-- Footer -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
     </div>
-</div>
-<!-- Feature End -->
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet">
 
-<!-- Facts Start -->
-<div class="container-xxl custom-bg-primary fact py-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container py-5 px-lg-5">
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                <i class="fa fa-certificate fa-3x text-secondary mb-3"></i>
-                <h1 class="text-white mb-2" data-toggle="counter-up">7</h1>
-                <p class="text-white mb-0">Entre 10 PCDs desempregados</p>
-            </div>
-            <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                <i class="fa fa-users-cog fa-3x text-secondary mb-3"></i>
-                <h1 class="text-white mb-2" data-toggle="counter-up">700000</h1>
-                <p class="text-white mb-0">Vagas qualificadas a PCD no BR</p>
-            </div>
-            <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                <i class="fa fa-users fa-3x text-secondary mb-3"></i>
-                <h1 class="text-white mb-2" data-toggle="counter-up">6000000</h1>
-                <p class="text-white mb-0">PCDs desempregados no BR</p>
-            </div>
-            <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                <i class="fa fa-check fa-3x text-secondary mb-3"></i>
-                <h1 class="text-white mb-2" data-toggle="counter-up">6</h1>
-                <p class="text-white mb-0">Cursos de capacitação na N.O.V.A</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Facts End -->
-<!-- About Start -->
-<div class="container-xxl py-5">
-    <div class="container py-5 px-lg-5">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <p class="section-title text-secondary">Dados<span></span></p>
-                <h1 class="mb-5">Empregabilidade no Brasil</h1>
-                <p>
-                    Pessoas com deficiência representam apenas 1% dos empregos em regime CLT no país. No último trimestre de 2022, mais de 13 milhões de pessoas estão desempregadas. Esses dados são fornecidos pelo módulo Pessoas com deficiência da PNAD Contínua 2022. Segundo a PNS (Pesquisa Nacional de Saúde), a taxa de participação de PCDs no mercado de trabalho em 2019 era de apenas 28,3%. Além disso, há também diferenças na questão salarial.
-                </p>
-               
-                <div class="skill mb-4">
-                    <div class="d-flex justify-content-between">
-                        <p class="mb-2">PCD Empregados</p>
-                        <p class="mb-2">25%</p>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar custom-bg-primary" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill mb-4">
-                    <div class="d-flex justify-content-between">
-                        <p class="mb-2">Pessoas sem deficiência Empregados</p>
-                        <p class="mb-2">60%</p>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill mb-4">
-                    <div class="d-flex justify-content-between">
-                        <p class="mb-2">Rendimento domiciliar total de até 2 salários mínimos por PCD</p>
-                        <p class="mb-2">34,8%</p>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="34.8" aria-valuemin="0" aria-valuemax="100" style="width: 34.8%;"></div>
-                    </div>
-                </div>
-
-                <a href="https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/0a9afaed04d79830f73a16136dba23b9.pdf"
-                    class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3"
-                    style="background-color: #ff904a; color: #ffffff;">Leia Mais</a>
-            </div>
-
-            <div class="col-lg-6">
-                <img class="img-fluid wow zoomIn rounded" data-wow-delay="0.5s" src="img/banner_index.png" alt="Banner de Empregabilidade no Brasil">
-            </div>
-        </div>
-    </div>
-</div>
-<!-- About End -->
-<!-- Team Start -->
-<div class="container-xxl py-5">
-    <div class="container py-5 px-lg-5">
-        <div class="wow fadeInUp" data-wow-delay="0.1s">
-            <p class="section-title text-secondary text-center"><span></span>Nosso time<span></span></p>
-            <h1 class="text-center mb-5">Quem está por trás do projeto</h1>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item bg-light rounded">
-                    <div class="text-center border-bottom p-4">
-                        <img class="img-fluid rounded-circle mb-4" src="img/team_bruna.jpeg" alt="Foto de Bruna Lorena">
-                        <h5>Bruna Lorena</h5>
-                        <span>Dev Full Stack | Front-End | UX Design</span>
-                    </div>
-                    <div class="d-flex justify-content-center p-4">
-                        <a class="btn btn-square mx-1" href="https://github.com/gama07" target="_blank"><i
-                                class="fab fa-github"></i></a>
-                        <a class="btn btn-square mx-1" href="mailto:brunalorena01@gmail.com"><i
-                                class="fas fa-envelope"></i></a>
-                        <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/bruna-lorena-46819528a/"
-                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item bg-light rounded">
-                    <div class="text-center border-bottom p-4">
-                        <img class="img-fluid rounded-circle mb-4" src="img/team_maycon.jpg" alt="Foto de Maycon Martins">
-                        <h5>Maycon Martins</h5>
-                        <span>Dev Full Stack | Back-End | AWS</span>
-                    </div>
-                    <div class="d-flex justify-content-center p-4">
-                        <a class="btn btn-square mx-1" href="https://github.com/mikemars0701" target="_blank"><i
-                                class="fab fa-github"></i></a>
-                        <a class="btn btn-square mx-1" href="mailto:maycon_martins2017@hotmail.com"><i
-                                class="fas fa-envelope"></i></a>
-                        <a class="btn btn-square mx-1"
-                            href="https://www.linkedin.com/in/maycon-martins-lima/" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item bg-light rounded">
-                    <div class="text-center border-bottom p-4">
-                        <img class="img-fluid rounded-circle mb-4" src="img/team_natacha.jpeg" alt="Foto de Natacha Carvalho">
-                        <h5>Natacha Carvalho</h5>
-                        <span>Dev Full Stack | Back-End | Java</span>
-                    </div>
-                    <div class="d-flex justify-content-center p-4">
-                        <a class="btn btn-square mx-1" href="https://github.com/eu1natacha" target="_blank"><i
-                                class="fab fa-github"></i></a>
-                        <a class="btn btn-square mx-1" href="mailto:natachacarvalho90@gmail.com"><i
-                                class="fas fa-envelope"></i></a>
-                        <a class="btn btn-square mx-1"
-                            href="https://www.linkedin.com/in/natacha-carvalho/" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item bg-light rounded">
-                    <div class="text-center border-bottom p-4">
-                        <img class="img-fluid rounded-circle mb-4" src="img/team_nataliam.jpg" alt="Foto de Natália Marques">
-                        <h5>Natália Marques</h5>
-                        <span>Dev Full Stack | Front-End</span>
-                    </div>
-                    <div class="d-flex justify-content-center p-4">
-                        <a class="btn btn-square mx-1" href="https://github.com/Natalia203" target="_blank"><i
-                                class="fab fa-github"></i></a>
-                        <a class="btn btn-square mx-1" href="mailto:seu-email@dominio.com"><i
-                                class="fas fa-envelope"></i></a>
-                        <a class="btn btn-square mx-1"
-                            href="https://www.linkedin.com/in/natália-marques-2a1763186/" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item bg-light rounded">
-                    <div class="text-center border-bottom p-4">
-                        <img class="img-fluid rounded-circle mb-4" src="img/team_nataliar.jpg" alt="Foto de Natalia Rodrigues">
-                        <h5>Natalia Rodrigues</h5>
-                        <span>Dev Full Stack | Front-End | Dados</span>
-                    </div>
-                    <div class="d-flex justify-content-center p-4">
-                        <a class="btn btn-square mx-1" href="https://github.com/nataliarodrxgues" target="_blank"><i
-                                class="fab fa-github"></i></a>
-                        <a class="btn btn-square mx-1" href="mailto:seu-email@dominio.com"><i
-                                class="fas fa-envelope"></i></a>
-                        <a class="btn btn-square mx-1"
-                            href="https://www.linkedin.com/in/nataliarodrxgues/" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Team End -->
- <!-- Footer Start -->
- <div class="container-fluid custom-bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5 px-lg-5">
-        <div class="row g-5">
-            <div class="col-md-6 col-lg-3">
-                <p class="section-title text-white h5 mb-4">Address<span></span></p>
-                <p><i class="fa fa-map-marker-alt me-3"></i>+55 Brasil, BR.</p>
-                <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href=""><i
-                            class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i
-                            class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i
-                            class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                <a class="btn btn-link" href="sobre.html">Sobre Nós</a>
-                <a class="btn btn-link" href="contato.html">Contato</a>
-                <a class="btn btn-link" href="privacidade.html">Política de Privacidade</a>
-                <a class="btn btn-link" href="vagas.html">Vagas</a>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <p class="section-title text-white h5 mb-4">Contato<span></span></p>
-                <p>Para qualquer dúvida, nos contate!</p>
-                <div class="position-relative w-100 mt-3">
-                    <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
-                        placeholder="Seu E-mail" style="height: 48px;">
-                    <button type="button"
-                        class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
-                            class="fa fa-paper-plane text-primary fs-4"></i></button>
-                </div> </div>
-
-<div class="container px-lg-5">
-    <div class="copyright">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a class="border-bottom" href="https://github.com/N-O-V-A-RecodePro2023">Squad
-                    10</a>, 2023 © Todos os Direitos Reservados
-
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-                <div class="footer-menu">
-                    <a href="index.html">Home</a>
-                    <a href="">Cookies</a>
-                    <a href="contato.html">Help</a>
-
-                </div>
-            </div>
-        </div></div></div></div>
-    
-<!-- Footer End -->
+    <script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
 
 
-<!-- Back to Top -->
-<a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-</div>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 
-<!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/isotope/isotope.pkgd.min.js"></script>
-<script src="lib/lightbox/js/lightbox.min.js"></script>
-
-<!-- Template Javascript -->
-<script src="js/main.js"></script>
+    <script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
+    <script>
+        avisoCookiesDrcode({})
+    </script>
+    <script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
+    <script>
+        avisoCookiesDrcode({
+            message: 'Utilizamos cookies para que você tenha a melhor experiência em nosso site. Para saber mais acesse nossa página de Política de Privacidade',
+            backgroundColor: 'rgba(255,255,255,0.95)',
+            textColor: '#666666',
+            buttonBackgoundColor: '#0e9a20',
+            buttonHoverBackgoundColor: '#0a6b16',
+            buttonTextColor: '#ffffff'
+        })
+    </script>
 </body>
-
 </html>

@@ -89,6 +89,12 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
+
+      // Initialize VLibras
+      $(window).on('load', function () {
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    });
     
 })(jQuery);
 

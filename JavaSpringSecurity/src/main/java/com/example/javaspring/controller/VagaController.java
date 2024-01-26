@@ -1,16 +1,15 @@
 package com.example.javaspring.controller;
 
+import com.example.javaspring.model.Empresa;
 import org.springframework.ui.Model;
-
 
 import com.example.javaspring.model.Vaga;
 
 import com.example.javaspring.services.VagaService;
+import com.example.javaspring.services.EmpresaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
-
 
 import java.util.List;
 
@@ -22,18 +21,19 @@ public class VagaController {
     @Autowired
     private VagaService vagaService;
 
-    
-    
+    @Autowired
+    private EmpresaService empresaService;
+
+    private Empresa savedEmpresa;
+
     //Persistência
     @PostMapping("/cadastro")
     public String saveVaga(@ModelAttribute ("vaga") Vaga vaga){
+        vaga.setEmpresa(this.savedEmpresa);
         Vaga savedVaga = vagaService.saveVaga(vaga);
+
         return "redirect:/vagas/vagas";
-        
-      
     } 
-    
-    
 
     //Ver a vaga por id
     @GetMapping("/vaga/{idVaga}")
@@ -43,13 +43,14 @@ public class VagaController {
         return "vagas";
     }
 
-    @GetMapping("/novo")
-    public String showFormForAdd(Model model){
+    @GetMapping("/novo/{idEmpresa}")
+    public String showFormForAdd(Model model, @PathVariable ("idEmpresa") Integer idEmpresa){
         Vaga vaga = new Vaga();
+        this.savedEmpresa = empresaService.getEmpresaById(idEmpresa);
+//        vaga.setEmpresa(empresa);
         model.addAttribute("vaga", vaga);
         return "cadastroVaga";
     }
-
 
     //ver a lista de todas as vagas
     @GetMapping("/vagas")
@@ -58,8 +59,7 @@ public class VagaController {
         model.addAttribute("vagas", vaga);
         return "vagas";
     }
-    
-    
+
     //Mostrar o form de edição
     @GetMapping("/editar/{idVaga}")
     public String ShowFormUpdate(@PathVariable Integer idVaga, Model model){
@@ -80,7 +80,4 @@ public class VagaController {
         vagaService.deleteVaga(idVaga);
         return "redirect:/index.html";
     }
-
-
-
 }

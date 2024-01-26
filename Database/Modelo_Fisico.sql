@@ -51,6 +51,10 @@ CREATE TABLE vaga (
     cod_vaga INTEGER not null,
     nome_vaga VARCHAR (255) not null,
     desc_vaga VARCHAR (255) not null,
+    local_vaga VARCHAR (255) not null,
+    modalidade_vaga VARCHAR (255) not null,
+    qtd_vaga INTEGER not null,
+    salario_vaga DOUBLE not null,
     id_empresa INTEGER  
 );
 

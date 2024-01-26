@@ -1,58 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-  <meta charset="utf-8">
-  <title>N.O.V.A</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+    <meta charset="utf-8">
+    <title>N.O.V.A</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-  <!-- Favicon -->
-  <link href="img/favicon.ico" rel="icon">
+    <!-- Favicon -->
+    <link href="/img/favicon.ico" rel="icon">
 
-  <!-- Google Web Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
-    rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+          rel="stylesheet">
 
-  <!-- Icon Font Stylesheet -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Libraries Stylesheet -->
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-  <!-- Customized Bootstrap Stylesheet -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Template Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
 
-  <!-- Acessibilidade-->
-  <link rel="import" href="vlibras.html">
-  <script src="https://cdn.userway.org/widget.js" data-account="09FcxZNn6a"></script>
-  <script src="acessibilidade.js"></script>
+    <!-- Acessibilidade-->
+    <link rel="import" href="vlibras.html">
+    <script src="https://cdn.userway.org/widget.js" data-account="09FcxZNn6a"></script>
+    <script src="acessibilidade.js"></script>
 </head>
 
 <!-- Acessibilidade-->
 <div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
 </div>
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
 <style>
-  .access-button {
-    border-radius: 50px;
-  }
+    .access-button {
+        border-radius: 50px;
+    }
 </style>
 
 <script src="https://cdn.userway.org/widget.js" data-account="09FcxZNn6a"></script>
@@ -60,1237 +60,1048 @@
 </head>
 
 <body>
-  <div class="container-xxl bg-white p-0">
-    <!-- Spinner Start -->
-    <div id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-      <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-    </div>
-    <!-- Spinner End -->
+<div class="container-xxl bg-white p-0">
+<!--    &lt;!&ndash; Spinner Start &ndash;&gt;-->
+<!--    <div id="spinner"-->
+<!--         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">-->
+<!--        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">-->
+<!--            <span class="sr-only">Loading...</span>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Spinner End &ndash;&gt;-->
 
-    <header class="container-xxl position-relative p-0">
-      <!-- Navigation Start -->
-      <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0" role="navigation"
-        aria-label="Main Navigation">
-        <h2 class="nocontent d-none"> Barra de Navegação </h2>
-        <a href="index.html" class="navbar-brand p-0" aria-label="Link to Home">
-          <figure class="m-0">
-            <img src="img/LogoNOVA.png" alt="Logotipo N.O.V.A" style="float: left; margin-right: 10px;">
-            <h1 class="m-0">N.O.V.A</h1>
-          </figure>
-        </a>
+  <header class="container-xxl position-relative p-0">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle Navigation">
-          <span class="fa fa-bars"></span>
-        </button>
+    <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0" role="navigation"
+       aria-label="Main Navigation">
+    <h2 class="nocontent d-none"> Barra de Navegação </h2>
+    <a href="/index.html" class="navbar-brand p-0" aria-label="Link to Home">
+      <figure class="m-0">
+        <img src="/img/LogoNOVA.png" alt="Logotipo N.O.V.A" style="float: left; margin-right: 10px;">
+        <h1 class="m-0">N.O.V.A</h1>
+      </figure>
+    </a>
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mx-auto py-0">
-            <li class="nav-item"><a href="sobre.html" class="nav-link" aria-label="Link to About Us">Sobre Nós</a></li>
-            <li class="nav-item"><a href="depoimentos.html" class="nav-link"
-                aria-label="Link to Testimonials">Depoimentos</a></li>
-            <li class="nav-item"><a href="vagas.html" class="nav-link" aria-label="Link to Job Openings">Vagas</a></li>
-            <li class="nav-item"><a href="cursos.html" class="nav-link" aria-label="Link to Courses">Cursos</a></li>
-            <li class="nav-item"><a href="contato.html" class="nav-link" aria-label="Link to Contact">Contato</a></li>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle Navigation">
+      <span class="fa fa-bars"></span>
+    </button>
 
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
-                aria-expanded="false" aria-label="Dropdown for Registration">Cadastre-se</a>
-              <ul class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
-                <li><a href="cadastroEmpresa.html" class="dropdown-item"
-                    aria-label="Link to Business Registration">Empresas</a></li>
-                <li><a href="cadastroCandidatos.html" class="dropdown-item"
-                    aria-label="Link to Candidate Registration">Candidatos</a></li>
-              </ul>
-            </li>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mx-auto py-0">
+        <li class="nav-item"><a href="sobre.html" class="nav-link" aria-label="Link to About Us">Sobre Nós</a></li>
+        <li class="nav-item"><a href="depoimentos.html" class="nav-link"
+                                aria-label="Link to Testimonials">Depoimentos</a></li>
+        <li class="nav-item"><a href="/vagas/vagas" class="nav-link" aria-label="Link to Job Openings">Vagas</a></li>
+        <li class="nav-item"><a href="cursos.html" class="nav-link" aria-label="Link to Courses">Cursos</a></li>
+        <li class="nav-item"><a href="/contato/novo" class="nav-link" aria-label="Link to Contact">Contato</a></li>
+
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
+             aria-expanded="false" aria-label="Dropdown for Registration">Cadastre-se</a>
+          <ul class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
+            <li><a href="/empresa/novo" class="dropdown-item"
+                   aria-label="Link to Business Registration">Empresas</a></li>
+            <li><a href="/candidato/novo" class="dropdown-item"
+                   aria-label="Link to Candidate Registration">Candidatos</a></li>
           </ul>
+        </li>
+      </ul>
 
-          <a href="login.html" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
-            aria-label="Link to Login">Entrar</a>
-        </div>
-      </nav>
-      <!-- Navigation End -->
+      <a href="/login/login" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
+         aria-label="Link to Login">Entrar</a>
+    </div>
+  </nav>
     </header>
+    <!-- Navbar end-->
 
-    <main>
-      <section class="container-xxl py-5 hero-header" style="background-color: #257f88ff;">
-        <div class="container my-5 py-5 px-lg-5">
-          <div class="row g-5 py-5">
-            <div class="col-12 text-center">
-              <h2 class="text-white animated slideInDown">Vagas</h2>
-              <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+
+    <!-- Vagas Start -->
+
+        <script>
+            function showDetails(modalId) {
+                var modal = new bootstrap.Modal(document.getElementById(modalId));
+                modal.show();
+            }
+        </script>
+
+
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title text-secondary justify-content-center"><span></span>Vagas<span></span></p>
+                    <h1 class="text-center mb-5">Vagas de Emprego disponíveis</h1>
+                </div>
+                <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-12 text-center">
+                        <ul class="list-inline mb-5" id="portfolio-flters">
+                            <li class="mx-2 active" data-filter="*">All</li>
+                            <li class="mx-2" data-filter=".first">ADM</li>
+                            <li class="mx-2" data-filter=".second">Saúde</li>
+                            <li class="mx-2" data-filter=".third">Indústria</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4 portfolio-container">
+                    <!-- Bloco 1 -->
+                    <div th:each="vaga : ${vagas}" class="col portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" th:src="@{'/img/logos/' + ${vaga.empresa.nomeFantasiaEmpresa + '.png'}}" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="javascript:void(0);"
+                                       onclick="showDetails('modalCard01')"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2" th:text="${vaga.nomeVaga}"   ></p>
+                                <div class="icons-container">
+                                    <div class="icon">
+                                        <img src="/IMG/localizacao.png" alt="Icone localização">
+                                        <span class="small-text" th:text="${vaga.localVaga}"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="/img/hibridoicon.png" alt="Icone computador e rede">
+                                        <span class="small-text" th:text="${vaga.modalidadeVaga}"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="/img/quantidade_vagas.png" alt="Icone pessoas">
+                                        <span class="small-text" th:text="${vaga.qtdVaga}"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="/img/salario.png" alt="Icone salário">
+                                        <span class="small-text" th:text="${vaga.salarioVaga}"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="/img/descricaoVaga.png" alt="Icone descrição">
+                                        <span class="small-text" th:text="${vaga.descVaga}"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </div>
+    <!-- Vagas End -->
+
+    <!-- Modal Start-->
+
+    <!-- Modal 01 - Vaga: Promotor de Vendas (Impulsiona Vendas) -->
+    <div class="modal fade" id="modalCard01" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content shadow">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="container lead text-left">
+                        Trazendo consigo uma visão clara, valores sólidos e uma missão comprometida com a inclusão. Nossa jornada
+                        até aqui é marcada por uma busca constante pela excelência, e agora, ao oferecer a oportunidade para a
+                        posição de Promotor(a) de Vendas, buscamos agregar talentos que compartilhem dessa visão única.
+                    </p>
 
 
-      <!-- Vagas Start -->
-      <script>
-        function showDetails(modalId) {
-          var modal = new bootstrap.Modal(document.getElementById(modalId));
-          modal.show();
-        }
-      </script>
-      <section class="container-xxl py-5">
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>O que você precisa pra se candidatar?</h5>
+                            <div class="icon">
+                                <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
+                                Ensino médio completo
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-file-excel" style="color: #ff904a;"></i>
+                                Pacote Office - Excel - Nível Básico
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-handshake" style="color: #ff904a;"></i>
+                                PLR (Participação nos Lucros e Resultados)
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais etapas desse processo seletivo?</h5>
+                            <div class="icon">
+                                <i class="fas fa-file-alt" style="color: #ff904a;"></i>
+                                Cadastro
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-user-check" style="color: #ff904a;"></i>
+                                Análise do seu perfil
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-comments" style="color: #ff904a;"></i>
+                                Entrevistas
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-file-signature" style="color: #ff904a;"></i>
+                                Proposta
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais os benefícios?</h5>
+                            <div class="icon">
+                                <i class="fas fa-medkit" style="color: #ff904a;"></i>
+                                Assistência Médica/Odontológica
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-bus" style="color: #ff904a;"></i>
+                                Vale Transporte/Vale Refeição
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-dumbbell" style="color: #ff904a;"></i>
+                                Gympass
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-money-check" style="color: #ff904a;"></i>
+                                PLR (Participação nos Lucros e Resultados)
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>A empresa tem Acessibilidade para PCD?</h5>
+                            <div class="icon">
+                                <i class="fas fa-wheelchair" style="color: #ff904a;"></i>
+                                Acessos a ambientes adaptados e estacionamento para veículos adaptados
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <p class="container lead text-left">
+                        Por aqui, nós construímos o futuro da mobilidade sustentável todos os dias. Vem com a gente?
+                    </p>
+
+                    <div class="container">
+                        <a href="cadastroCandidatos.html" class="btn btn-primary"
+                           style="background-color: #ff904a;">Candidate-se</a>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 02 - Vaga: Operador de Produção (Produtiva Tech) -->
+    <div class="modal fade" id="modalCard02" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content shadow">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p class="container lead text-left">
+                        Trazendo consigo uma visão clara, valores sólidos e uma missão comprometida com a inclusão. Nossa jornada
+                        até aqui é marcada por uma busca constante pela excelência, e agora, ao oferecer a oportunidade para a
+                        posição de Operador(a) de Produção, buscamos agregar talentos que compartilhem dessa visão única.
+                    </p>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>O que você precisa pra se candidatar?</h5>
+                            <div class="icon">
+                                <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
+                                Ensino médio completo
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-briefcase" style="color: #ff904a;"></i>
+                                Experiência anterior na função
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-cogs" style="color: #ff904a;"></i>
+                                Conhecimento em procedimentos de produção
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais etapas desse processo seletivo?</h5>
+                            <div class="icon">
+                                <i class="fas fa-file-alt" style="color: #ff904a;"></i>
+                                Cadastro
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-user-check" style="color: #ff904a;"></i>
+                                Análise do seu perfil
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-comments" style="color: #ff904a;"></i>
+                                Entrevistas
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-file-signature" style="color: #ff904a;"></i>
+                                Proposta
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais os benefícios?</h5>
+                            <div class="icon">
+                                <i class="fas fa-medkit" style="color: #ff904a;"></i>
+                                Assistência Médica/Odontológica
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-bus" style="color: #ff904a;"></i>
+                                Vale Transporte/Vale Refeição
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-shield-alt" style="color: #ff904a;"></i>
+                                Seguro de Vida
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>O que você precisa pra se candidatar?</h5>
+                            <div class="icon">
+                                <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
+                                Formação em Ciências Contábeis ou áreas relacionadas
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-briefcase" style="color: #ff904a;"></i>
+                                Experiência anterior em finanças
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-chart-bar" style="color: #ff904a;"></i>
+                                Conhecimento avançado em sistemas financeiros
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais etapas desse processo seletivo?</h5>
+                            <div class="icon">
+                                <i class="fas fa-file-alt" style="color: #ff904a;"></i>
+                                Cadastro
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-user-check" style="color: #ff904a;"></i>
+                                Análise do seu perfil
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-comments" style="color: #ff904a;"></i>
+                                Entrevistas
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-file-signature" style="color: #ff904a;"></i>
+                                Proposta
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais os benefícios?</h5>
+                            <div class="icon">
+                                <i class="fas fa-medkit" style="color: #ff904a;"></i>
+                                Assistência Médica/Odontológica
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-bus" style="color: #ff904a;"></i>
+                                Vale Transporte/Vale Refeição
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-handshake" style="color: #ff904a;"></i>
+                                Participação nos Lucros e Resultados (PLR)
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>O que você precisa pra se candidatar?</h5>
+                            <div class="icon">
+                                <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
+                                Ensino Superior em Farmácia
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-prescription" style="color: #ff904a;"></i>
+                                CRF ativo
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-hospital" style="color: #ff904a;"></i>
+                                Experiência em hospital/clínica
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais etapas desse processo seletivo?</h5>
+                            <div class="icon">
+                                <i class="fas fa-file-alt" style="color: #ff904a;"></i>
+                                Cadastro
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-user-check" style="color: #ff904a;"></i>
+                                Análise do seu perfil
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-comments" style="color: #ff904a;"></i>
+                                Entrevistas
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-file-signature" style="color: #ff904a;"></i>
+                                Proposta
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais os benefícios?</h5>
+                            <div class="icon">
+                                <i class="fas fa-medkit" style="color: #ff904a;"></i>
+                                Assistência Médica/Odontológica
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-bus" style="color: #ff904a;"></i>
+                                Vale Transporte/Vale Refeição
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-money-check" style="color: #ff904a;"></i>
+                                PLR (Participação nos Lucros e Resultados)
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>A empresa tem Acessibilidade para PCD?</h5>
+                            <div class="icon">
+                                <i class="fas fa-wheelchair" style="color: #ff904a;"></i>
+                                Acessos a ambientes adaptados e estacionamento para veículos adaptados
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <p class="container lead text-left">
+                        Por aqui, nós construímos o futuro da produção com sustentabilidade todos os dias. Vem com a gente?
+                    </p>
+                    <div class="container">
+                        <a href="cadastroCandidatos.html" class="btn btn-primary"
+                           style="background-color: #ff904a;">Candidate-se</a>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 03 - Vaga: Assistente Financeiro Sênior (Finanças Estratégicas) -->
+    <div class="modal fade" id="modalCard03" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content shadow">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p class="container lead text-left">
+                        Trazendo consigo uma visão clara, valores sólidos e uma missão comprometida com a inclusão. Nossa jornada
+                        até aqui é marcada por uma busca constante pela excelência, e agora, ao oferecer a oportunidade para a
+                        posição de Assistente Financeiro Sênior, buscamos agregar talentos que compartilhem dessa visão única.
+                    </p>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>O que você precisa pra se candidatar?</h5>
+                            <div class="icon">
+                                <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
+                                Formação em Ciências Contábeis ou áreas relacionadas
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-briefcase" style="color: #ff904a;"></i>
+                                Experiência anterior em finanças
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-chart-bar" style="color: #ff904a;"></i>
+                                Conhecimento avançado em sistemas financeiros
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais etapas desse processo seletivo?</h5>
+                            <div class="icon">
+                                <i class="fas fa-file-alt" style="color: #ff904a;"></i>
+                                Cadastro
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-user-check" style="color: #ff904a;"></i>
+                                Análise do seu perfil
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-comments" style="color: #ff904a;"></i>
+                                Entrevistas
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-file-signature" style="color: #ff904a;"></i>
+                                Proposta
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais os benefícios?</h5>
+                            <div class="icon">
+                                <i class="fas fa-medkit" style="color: #ff904a;"></i>
+                                Assistência Médica/Odontológica
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-bus" style="color: #ff904a;"></i>
+                                Vale Transporte/Vale Refeição
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-handshake" style="color: #ff904a;"></i>
+                                Participação nos Lucros e Resultados (PLR)
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>O que você precisa pra se candidatar?</h5>
+                            <div class="icon">
+                                <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
+                                Ensino Superior em Farmácia
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-prescription" style="color: #ff904a;"></i>
+                                CRF ativo
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-hospital" style="color: #ff904a;"></i>
+                                Experiência em hospital/clínica
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais etapas desse processo seletivo?</h5>
+                            <div class="icon">
+                                <i class="fas fa-file-alt" style="color: #ff904a;"></i>
+                                Cadastro
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-user-check" style="color: #ff904a;"></i>
+                                Análise do seu perfil
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-comments" style="color: #ff904a;"></i>
+                                Entrevistas
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-file-signature" style="color: #ff904a;"></i>
+                                Proposta
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais os benefícios?</h5>
+                            <div class="icon">
+                                <i class="fas fa-medkit" style="color: #ff904a;"></i>
+                                Assistência Médica/Odontológica
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-bus" style="color: #ff904a;"></i>
+                                Vale Transporte/Vale Refeição
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-money-check" style="color: #ff904a;"></i>
+                                PLR (Participação nos Lucros e Resultados)
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>A empresa tem Acessibilidade para PCD?</h5>
+                            <div class="icon">
+                                <i class="fas fa-wheelchair" style="color: #ff904a;"></i>
+                                Acessos a ambientes adaptados e estacionamento para veículos adaptados
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <p class="container lead text-left">
+                        Por aqui, nós construímos o futuro das finanças estratégicas com inclusão todos os dias. Vem com a gente?
+                    </p>
+                    <div class="container">
+                        <a href="cadastroCandidatos.html" class="btn btn-primary"
+                           style="background-color: #ff904a;">Candidate-se</a>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 04 - Vaga: Farmacêutico Hospitalar (Saúde Connect) -->
+    <div class="modal fade" id="modalCard04" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content shadow">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p class="container lead text-left">
+                        Trazendo consigo uma visão clara, valores sólidos e uma missão comprometida com a inclusão. Nossa jornada
+                        até aqui é marcada por uma busca constante pela excelência, e agora, ao oferecer a oportunidade para a
+                        posição de Farmacêutico Hospitalar, buscamos agregar talentos que compartilhem dessa visão única.
+                    </p>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>O que você precisa pra se candidatar?</h5>
+                            <div class="icon">
+                                <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
+                                Ensino Superior em Farmácia
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-prescription" style="color: #ff904a;"></i>
+                                CRF ativo
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-hospital" style="color: #ff904a;"></i>
+                                Experiência em hospital/clínica
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais etapas desse processo seletivo?</h5>
+                            <div class="icon">
+                                <i class="fas fa-file-alt" style="color: #ff904a;"></i>
+                                Cadastro
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-user-check" style="color: #ff904a;"></i>
+                                Análise do seu perfil
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-comments" style="color: #ff904a;"></i>
+                                Entrevistas
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-file-signature" style="color: #ff904a;"></i>
+                                Proposta
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais os benefícios?</h5>
+                            <div class="icon">
+                                <i class="fas fa-medkit" style="color: #ff904a;"></i>
+                                Assistência Médica/Odontológica
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-bus" style="color: #ff904a;"></i>
+                                Vale Transporte/Vale Refeição
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-money-check" style="color: #ff904a;"></i>
+                                PLR (Participação nos Lucros e Resultados)
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>A empresa tem Acessibilidade para PCD?</h5>
+                            <div class="icon">
+                                <i class="fas fa-wheelchair" style="color: #ff904a;"></i>
+                                Acessos a ambientes adaptados e estacionamento para veículos adaptados
+                            </div>
+                        </li>
+                    </ul>
+
+
+
+                    <p class="container lead text-left">
+                        Por aqui, nós construímos o futuro da saúde conectada com inclusão todos os dias. Vem com a gente?
+                    </p>
+                    <div class="container">
+                        <a href="cadastroCandidatos.html" class="btn btn-primary"
+                           style="background-color: #ff904a;">Candidate-se</a>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 05 - Vaga: Desenvolvedor JR (DevInova) -->
+    <div class="modal fade" id="modalCard05" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content shadow">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p class="container lead text-left">
+                        Trazendo consigo uma visão clara, valores sólidos e uma missão comprometida com a inclusão. Nossa jornada
+                        até aqui é marcada por uma busca constante pela excelência, e agora, ao oferecer a oportunidade para a
+                        posição de Desenvolvedor(a) JR, buscamos agregar talentos que compartilhem dessa visão única.
+                    </p>
+
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>O que você precisa pra se candidatar?</h5>
+                            <div class="icon">
+                                <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
+                                Ensino Superior completo ou em andamento em Ciência da Computação ou áreas relacionadas
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-code" style="color: #ff904a;"></i>
+                                Conhecimento em linguagens de programação (ex: Java, Python, JavaScript)
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-laptop-code" style="color: #ff904a;"></i>
+                                Experiência em desenvolvimento de software
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais etapas desse processo seletivo?</h5>
+                            <div class="icon">
+                                <i class="fas fa-file-alt" style="color: #ff904a;"></i>
+                                Cadastro
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-user-check" style="color: #ff904a;"></i>
+                                Análise do seu perfil
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-comments" style="color: #ff904a;"></i>
+                                Entrevistas
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-flask" style="color: #ff904a;"></i>
+                                Testes práticos
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-file-contract" style="color: #ff904a;"></i>
+                                Proposta
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais os benefícios?</h5>
+                            <div class="icon">
+                                <i class="fas fa-medkit" style="color: #ff904a;"></i>
+                                Assistência Médica/Odontológica
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-bus" style="color: #ff904a;"></i>
+                                Vale Transporte/Vale Refeição
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-clock" style="color: #ff904a;"></i>
+                                Horário flexível
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-users" style="color: #ff904a;"></i>
+                                Ambiente colaborativo
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>A empresa tem Acessibilidade para PCD?</h5>
+                            <div class="icon">
+                                <i class="fas fa-wheelchair" style="color: #ff904a;"></i>
+                                Acessos a ambientes adaptados e estacionamento para veículos adaptados
+                            </div>
+                        </li>
+                    </ul>
+
+
+
+                    <p class="container lead text-left">
+                        Por aqui, nós construímos o futuro da inovação com inclusão todos os dias. Vem com a gente?
+                    </p>
+                    <div class="container">
+                        <a href="cadastroCandidatos.html" class="btn btn-primary"
+                           style="background-color: #ff904a;">Candidate-se</a>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 06 - Vaga: Assistente de Marketing (Marketing Solutions) -->
+    <div class="modal fade" id="modalCard06" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content shadow">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p class="container lead text-left">
+                        Trazendo consigo uma visão clara, valores sólidos e uma missão comprometida com a inclusão. Nossa jornada
+                        até aqui é marcada por uma busca constante pela excelência, e agora, ao oferecer a oportunidade para a
+                        posição de Assistente de Marketing, buscamos agregar talentos que compartilhem dessa visão única.
+                    </p>
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>O que você precisa pra se candidatar?</h5>
+                            <div class="icon">
+                                <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
+                                Formação em Marketing, Publicidade, Comunicação ou áreas relacionadas
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-paint-brush" style="color: #ff904a;"></i>
+                                Conhecimento em ferramentas de design gráfico (ex: Adobe Photoshop, Illustrator)
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-chart-line" style="color: #ff904a;"></i>
+                                Experiência em marketing digital
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais etapas desse processo seletivo?</h5>
+                            <div class="icon">
+                                <i class="fas fa-file-alt" style="color: #ff904a;"></i>
+                                Cadastro
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-user-check" style="color: #ff904a;"></i>
+                                Análise do seu perfil
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-comments" style="color: #ff904a;"></i>
+                                Entrevistas
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-flask" style="color: #ff904a;"></i>
+                                Testes práticos
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-file-contract" style="color: #ff904a;"></i>
+                                Proposta
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>Quais os benefícios?</h5>
+                            <div class="icon">
+                                <i class="fas fa-medkit" style="color: #ff904a;"></i>
+                                Assistência Médica/Odontológica
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-bus" style="color: #ff904a;"></i>
+                                Vale Transporte/Vale Refeição
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-dumbbell" style="color: #ff904a;"></i>
+                                Gympass
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-chart-pie" style="color: #ff904a;"></i>
+                                PLR (Participação nos Lucros e Resultados)
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group m-2 w-75 container lead text-left">
+                        <li class="list-group-item">
+                            <h5>A empresa tem Acessibilidade para PCD?</h5>
+                            <div class="icon">
+                                <i class="fas fa-wheelchair" style="color: #ff904a;"></i>
+                                Acessos a ambientes adaptados e estacionamento para veículos adaptados
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <p class="container lead text-left">
+                        Por aqui, nós construímos o futuro do marketing com inclusão todos os dias. Vem com a gente?
+                    </p>
+                    <div class="container">
+                        <a href="cadastroCandidatos.html" class="btn btn-primary"
+                           style="background-color: #ff904a;">Candidate-se</a>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid custom-bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5 px-lg-5">
-          <div class="wow fadeInUp" data-wow-delay="0.1s">
-            <p class="section-title text-secondary justify-content-center"><span></span>Vagas<span></span></p>
-            <h2 class="text-center mb-5">Vagas de Emprego disponíveis</h2>
-          </div>
-          <nav class="col-12 text-center mt-n2 wow fadeInUp" data-wow-delay="0.3s">
-            <h2 class="nocontent d-none"> Barra de Navegação de Empregos</h2>
-            <ul class="list-inline mb-5" id="portfolio-flters">
-              <li class="mx-2 active" data-filter="*">All</li>
-              <li class="mx-2" data-filter=".first">ADM</li>
-              <li class="mx-2" data-filter=".second">Saúde</li>
-              <li class="mx-2" data-filter=".third">Indústria</li>
-            </ul>
-          </nav>
-          <div class="row g-4 portfolio-container">
-            <!-- Bloco 1 -->
-            <article class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-              <h2 class="nocontent d-none"> Vaga 1 </h2>
-              <div class="rounded overflow-hidden">
-                <div class="position-relative overflow-hidden">
-                  <img class="img-fluid w-100" src="img/impusionaVendas.png" alt="Logo da Empresa">
-                  <div class="portfolio-overlay">
-                    <a class="btn btn-square btn-outline-light mx-1" href="javascript:void(0);"
-                      onclick="showDetails('modalCard01')"><i class="fa fa-eye"></i></a>
-                  </div>
-                </div>
-                <div class="bg-light p-4">
-                  <p class="text-primary fw-medium mb-2">Promotor de Vendas</p>
-                  <div class="icons-container">
-                    <div class="icon">
-                      <img src="IMG/localizacao.png" alt="Icone localização">
-                      <span class="small-text"><strong>Diadema - SP</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="img/hibridoicon.png" alt="Icone computador e rede">
-                      <span class="small-text"><strong>Presencial</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="img/quantidade_vagas.png" alt="Icone pessoas">
-                      <span class="small-text"><strong>1 Vaga</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="img/salario.png" alt="Icone salário">
-                      <span class="small-text"><strong>R$ 1.360,00</strong></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <!-- Bloco 2 -->
-            <article class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-              <h2 class="nocontent d-none"> Vaga 2 </h2>
-              <div class="rounded overflow-hidden">
-                <div class="position-relative overflow-hidden">
-                  <img class="img-fluid w-100" src="img/producao.png" alt="Logo da Empresa">
-                  <div class="portfolio-overlay">
-                    <a class="btn btn-square btn-outline-light mx-1" href="javascript:void(0);"
-                      onclick="showDetails('modalCard02')"><i class="fa fa-eye"></i></a>
-
-                  </div>
-                </div>
-                <div class="bg-light p-4">
-                  <p class="text-primary fw-medium mb-2">Operador de Produção</p>
-                  <div class="icons-container">
-                    <div class="icon">
-                      <img src="IMG/localizacao.png" alt="Icone localização">
-                      <span class="small-text"><strong>Brasília - DF</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="img/hibridoicon.png" alt="Icone computador e rede">
-                      <span class="small-text"><strong>Presencial</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="img/quantidade_vagas.png" alt="Icone pessoas">
-                      <span class="small-text"><strong>3 vagas</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="img/salario.png" alt="Icone salário">
-                      <span class="small-text"><strong>R$ 1.813,00</strong></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <!-- Bloco 3 -->
-            <article class="col-lg-4 col-md-6 portfolio-item third wow fadeInUp" data-wow-delay="0.5s">
-              <h2 class="nocontent d-none"> Vaga 3 </h2>
-              <div class="rounded overflow-hidden">
-                <div class="position-relative overflow-hidden">
-                  <img class="img-fluid w-100" src="img/financas.png" alt="Logo da Empresa">
-                  <div class="portfolio-overlay">
-                    <a class="btn btn-square btn-outline-light mx-1" href="javascript:void(0);"
-                      onclick="showDetails('modalCard03')"><i class="fa fa-eye"></i></a>
-
-                  </div>
-                </div>
-                <div class="bg-light p-4">
-                  <p class="text-primary fw-medium mb-2">Assistente Financeiro Sênior</p>
-                  <div class="icons-container">
-                    <div class="icon">
-                      <img src="IMG/localizacao.png" alt="Icone localização">
-                      <span class="small-text"><strong>Vitória - ES</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="img/hibridoicon.png" alt="Icone computador e rede">
-                      <span class="small-text"><strong>Presencial</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="IMG/quantidade_vagas.png" alt="Icone pessoas">
-                      <span class="small-text"><strong>2 vagas</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="img/salario.png" alt="Icone salário">
-                      <span class="small-text"><strong>R$30.000</strong></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <!-- Bloco 4 -->
-            <article class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
-              <h2 class="nocontent d-none"> Vaga 4 </h2>
-              <div class="rounded overflow-hidden">
-                <div class="position-relative overflow-hidden">
-                  <img class="img-fluid w-100" src="img/saudeConnect.png" alt="Logo da Empresa">
-                  <div class="portfolio-overlay">
-                    <a class="btn btn-square btn-outline-light mx-1" href="javascript:void(0);
-                  " onclick="showDetails('modalCard04')"><i class="fa fa-eye"></i></a>
-
-                  </div>
-                </div>
-                <div class="bg-light p-4">
-                  <p class="text-primary fw-medium mb-2">Farmacêutico Hospitalar</p>
-                  <div class="icons-container">
-                    <div class="icon">
-                      <img src="IMG/localizacao.png" alt="Icone localização">
-                      <span class="small-text"><strong>Barueri - SP</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="img/hibridoicon.png" alt="Icone computador e rede">
-                      <span class="small-text"><strong>Presencial</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="IMG/quantidade_vagas.png" alt="Icone pessoas">
-                      <span class="small-text"><strong>2 vagas</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="img/salario.png" alt="Icone salário">
-                      <span class="small-text"><strong>R$ 3.505,00</strong></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <!-- Bloco 5 -->
-            <article class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-              <h2 class="nocontent d-none"> Vaga 5 </h2>
-              <div class="rounded overflow-hidden">
-                <div class="position-relative overflow-hidden">
-                  <img class="img-fluid w-100" src="img/devInova.png" alt="Logo da Empresa">
-                  <div class="portfolio-overlay">
-                    <a class="btn btn-square btn-outline-light mx-1" href="javascript:void(0);
-                  " onclick="showDetails('modalCard05')"><i class="fa fa-eye"></i></a>
-
-                  </div>
-                </div>
-                <div class="bg-light p-4">
-                  <p class="text-primary fw-medium mb-2">Desenvolvedor JR</p>
-                  <div class="icons-container">
-                    <div class="icon">
-                      <img src="IMG/localizacao.png" alt="Icone localização">
-                      <span class="small-text"><strong>Aracaju - SE</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="img/hibridoicon.png" alt="Icone computador e rede">
-                      <span class="small-text"><strong>Presencial</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="IMG/quantidade_vagas.png" alt="Icone pessoas">
-                      <span class="small-text"><strong>1 vaga</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="img/salario.png" alt="Icone salário">
-                      <span class="small-text"><strong> R$ 3.900</strong></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <!-- Bloco 6 -->
-            <article class="col-lg-4 col-md-6 portfolio-item third wow fadeInUp" data-wow-delay="0.5s">
-              <h2 class="nocontent d-none"> Vaga 6 </h2>
-              <div class="rounded overflow-hidden">
-                <div class="position-relative overflow-hidden">
-                  <img class="img-fluid w-100" src="img/market.png" alt="Logo da Empresa">
-                  <div class="portfolio-overlay">
-                    <a class="btn btn-square btn-outline-light mx-1" href="javascript:void(0);
-                  " onclick="showDetails('modalCard06')"><i class="fa fa-eye"></i></a>
-
-                  </div>
-                </div>
-                <div class="bg-light p-4">
-                  <p class="text-primary fw-medium mb-2">Assistente de Marketing</p>
-                  <div class="icons-container">
-                    <div class="icon">
-                      <img src="IMG/localizacao.png" alt="Icone localização">
-                      <span class="small-text"><strong>São Paulo - SP</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="img/hibridoicon.png" alt="Icone computador e rede">
-                      <span class="small-text"><strong>Presencial</strong></span>
-                    </div>
-                    <div class="icon">
-                      <img src="IMG/quantidade_vagas.png" alt="Icone pessoas">
-                      <span class="small-text"><strong>3 vagas</strong></span>
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3">
+                    <p class="section-title text-white h5 mb-4">Endereço<span></span></p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>+55 Brasil, BR.</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+55 9-9999-9999</p>
+                    <p><i class="fa fa-envelope me-3"></i>squad10manha2023<br>recodepro@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social"
+                           href="https://www.linkedin.com/company/rederecode/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                           href="https://github.com/N-O-V-A-RecodePro2023"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                           href="mailto:squad10manha2023recodepro@gmail.com"><i
+                                class="fas fa-envelope"></i></a>
                     </div>
 
-                    <div class="icon">
-                      <img src="img/salario.png" alt="Icone salário">
-                      <span class="small-text"><strong>R$ 4.529</strong></span>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </article>
-          </div>
+                <div class="col-md-6 col-lg-3">
+                    <p class="section-title text-white h5 mb-4">Links Rápidos<span></span></p>
+                    <a class="btn btn-link" href="sobre.html">Sobre nós</a>
+                    <a class="btn btn-link" href="contato.html">Contate-nos</a>
+                    <a class="btn btn-link" href="privacidade.html">Politica de Privacidade</a>
+                    <a class="btn btn-link" href="vagas.html">Vagas</a>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <p class="section-title text-white h5 mb-4">Contato<span></span></p>
+                    <p>Para qualquer dúvida, nos contate!</p>
+                    <div class="position-relative w-100 mt-3">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                               placeholder="Seu E-mail" style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                </div>
+
+                <div class="container px-lg-5">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                &copy; <a class="border-bottom"
+                                          href="https://github.com/N-O-V-A-RecodePro2023">Squad
+                                10</a>, 2023 © Todos os Direitos Reservados
+
+                            </div>
+                            <div class="col-md-6 text-center text-md-end">
+                                <div class="footer-menu">
+                                    <a href="index.html">Home</a>
+                                    <a href="">Cookies</a>
+                                    <a href="contato.html">Ajuda</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer End -->
+
+
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
         </div>
-      </section>
-      <!-- Vagas End -->
 
-      <!-- Modal Start-->
-      <!-- Modal 01 - Vaga: Promotor de Vendas (Impulsiona Vendas) -->
-      <div class="modal fade" id="modalCard01" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content shadow">
-            <div class="modal-header">
-              <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-            </div>
-
-            <div class="modal-body">
-              <p class="container lead text-left">
-                Trazendo consigo uma visão clara, valores sólidos e uma missão comprometida com a inclusão. Nossa
-                jornada
-                até aqui é marcada por uma busca constante pela excelência, e agora, ao oferecer a oportunidade para a
-                posição de Promotor(a) de Vendas, buscamos agregar talentos que compartilhem dessa visão única.
-              </p>
-
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>O que você precisa pra se candidatar?</h5>
-                  <div class="icon">
-                    <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
-                    Ensino médio completo
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-file-excel" style="color: #ff904a;"></i>
-                    Pacote Office - Excel - Nível Básico
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-handshake" style="color: #ff904a;"></i>
-                    PLR (Participação nos Lucros e Resultados)
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais etapas desse processo seletivo?</h5>
-                  <div class="icon">
-                    <i class="fas fa-file-alt" style="color: #ff904a;"></i>
-                    Cadastro
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-user-check" style="color: #ff904a;"></i>
-                    Análise do seu perfil
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-comments" style="color: #ff904a;"></i>
-                    Entrevistas
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-file-signature" style="color: #ff904a;"></i>
-                    Proposta
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais os benefícios?</h5>
-                  <div class="icon">
-                    <i class="fas fa-medkit" style="color: #ff904a;"></i>
-                    Assistência Médica/Odontológica
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-bus" style="color: #ff904a;"></i>
-                    Vale Transporte/Vale Refeição
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-dumbbell" style="color: #ff904a;"></i>
-                    Gympass
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-money-check" style="color: #ff904a;"></i>
-                    PLR (Participação nos Lucros e Resultados)
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>A empresa tem Acessibilidade para PCD?</h5>
-                  <div class="icon">
-                    <i class="fas fa-wheelchair" style="color: #ff904a;"></i>
-                    Acessos a ambientes adaptados e estacionamento para veículos adaptados
-                  </div>
-                </li>
-              </ul>
-
-
-              <p class="container lead text-left">
-                Por aqui, nós construímos o futuro da mobilidade sustentável todos os dias. Vem com a gente?
-              </p>
-
-              <div class="container">
-                <a href="cadastroCandidatos.html" class="btn btn-primary"
-                  style="background-color: #ff904a;">Candidate-se</a>
-              </div>
-
-            </div>
-
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal 02 - Vaga: Operador de Produção (Produtiva Tech) -->
-      <div class="modal fade" id="modalCard02" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content shadow">
-            <div class="modal-header">
-              <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-            </div>
-
-            <div class="modal-body">
-
-              <p class="container lead text-left">
-                Trazendo consigo uma visão clara, valores sólidos e uma missão comprometida com a inclusão. Nossa
-                jornada
-                até aqui é marcada por uma busca constante pela excelência, e agora, ao oferecer a oportunidade para a
-                posição de Operador(a) de Produção, buscamos agregar talentos que compartilhem dessa visão única.
-              </p>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>O que você precisa pra se candidatar?</h5>
-                  <div class="icon">
-                    <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
-                    Ensino médio completo
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-briefcase" style="color: #ff904a;"></i>
-                    Experiência anterior na função
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-cogs" style="color: #ff904a;"></i>
-                    Conhecimento em procedimentos de produção
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais etapas desse processo seletivo?</h5>
-                  <div class="icon">
-                    <i class="fas fa-file-alt" style="color: #ff904a;"></i>
-                    Cadastro
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-user-check" style="color: #ff904a;"></i>
-                    Análise do seu perfil
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-comments" style="color: #ff904a;"></i>
-                    Entrevistas
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-file-signature" style="color: #ff904a;"></i>
-                    Proposta
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais os benefícios?</h5>
-                  <div class="icon">
-                    <i class="fas fa-medkit" style="color: #ff904a;"></i>
-                    Assistência Médica/Odontológica
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-bus" style="color: #ff904a;"></i>
-                    Vale Transporte/Vale Refeição
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-shield-alt" style="color: #ff904a;"></i>
-                    Seguro de Vida
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>O que você precisa pra se candidatar?</h5>
-                  <div class="icon">
-                    <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
-                    Formação em Ciências Contábeis ou áreas relacionadas
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-briefcase" style="color: #ff904a;"></i>
-                    Experiência anterior em finanças
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-chart-bar" style="color: #ff904a;"></i>
-                    Conhecimento avançado em sistemas financeiros
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais etapas desse processo seletivo?</h5>
-                  <div class="icon">
-                    <i class="fas fa-file-alt" style="color: #ff904a;"></i>
-                    Cadastro
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-user-check" style="color: #ff904a;"></i>
-                    Análise do seu perfil
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-comments" style="color: #ff904a;"></i>
-                    Entrevistas
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-file-signature" style="color: #ff904a;"></i>
-                    Proposta
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais os benefícios?</h5>
-                  <div class="icon">
-                    <i class="fas fa-medkit" style="color: #ff904a;"></i>
-                    Assistência Médica/Odontológica
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-bus" style="color: #ff904a;"></i>
-                    Vale Transporte/Vale Refeição
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-handshake" style="color: #ff904a;"></i>
-                    Participação nos Lucros e Resultados (PLR)
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>O que você precisa pra se candidatar?</h5>
-                  <div class="icon">
-                    <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
-                    Ensino Superior em Farmácia
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-prescription" style="color: #ff904a;"></i>
-                    CRF ativo
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-hospital" style="color: #ff904a;"></i>
-                    Experiência em hospital/clínica
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais etapas desse processo seletivo?</h5>
-                  <div class="icon">
-                    <i class="fas fa-file-alt" style="color: #ff904a;"></i>
-                    Cadastro
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-user-check" style="color: #ff904a;"></i>
-                    Análise do seu perfil
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-comments" style="color: #ff904a;"></i>
-                    Entrevistas
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-file-signature" style="color: #ff904a;"></i>
-                    Proposta
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais os benefícios?</h5>
-                  <div class="icon">
-                    <i class="fas fa-medkit" style="color: #ff904a;"></i>
-                    Assistência Médica/Odontológica
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-bus" style="color: #ff904a;"></i>
-                    Vale Transporte/Vale Refeição
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-money-check" style="color: #ff904a;"></i>
-                    PLR (Participação nos Lucros e Resultados)
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>A empresa tem Acessibilidade para PCD?</h5>
-                  <div class="icon">
-                    <i class="fas fa-wheelchair" style="color: #ff904a;"></i>
-                    Acessos a ambientes adaptados e estacionamento para veículos adaptados
-                  </div>
-                </li>
-              </ul>
-
-
-              <p class="container lead text-left">
-                Por aqui, nós construímos o futuro da produção com sustentabilidade todos os dias. Vem com a gente?
-              </p>
-              <div class="container">
-                <a href="cadastroCandidatos.html" class="btn btn-primary"
-                  style="background-color: #ff904a;">Candidate-se</a>
-              </div>
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal 03 - Vaga: Assistente Financeiro Sênior (Finanças Estratégicas) -->
-      <div class="modal fade" id="modalCard03" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content shadow">
-            <div class="modal-header">
-              <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-            </div>
-
-            <div class="modal-body">
-
-              <p class="container lead text-left">
-                Trazendo consigo uma visão clara, valores sólidos e uma missão comprometida com a inclusão. Nossa
-                jornada
-                até aqui é marcada por uma busca constante pela excelência, e agora, ao oferecer a oportunidade para a
-                posição de Assistente Financeiro Sênior, buscamos agregar talentos que compartilhem dessa visão única.
-              </p>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>O que você precisa pra se candidatar?</h5>
-                  <div class="icon">
-                    <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
-                    Formação em Ciências Contábeis ou áreas relacionadas
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-briefcase" style="color: #ff904a;"></i>
-                    Experiência anterior em finanças
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-chart-bar" style="color: #ff904a;"></i>
-                    Conhecimento avançado em sistemas financeiros
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais etapas desse processo seletivo?</h5>
-                  <div class="icon">
-                    <i class="fas fa-file-alt" style="color: #ff904a;"></i>
-                    Cadastro
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-user-check" style="color: #ff904a;"></i>
-                    Análise do seu perfil
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-comments" style="color: #ff904a;"></i>
-                    Entrevistas
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-file-signature" style="color: #ff904a;"></i>
-                    Proposta
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais os benefícios?</h5>
-                  <div class="icon">
-                    <i class="fas fa-medkit" style="color: #ff904a;"></i>
-                    Assistência Médica/Odontológica
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-bus" style="color: #ff904a;"></i>
-                    Vale Transporte/Vale Refeição
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-handshake" style="color: #ff904a;"></i>
-                    Participação nos Lucros e Resultados (PLR)
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>O que você precisa pra se candidatar?</h5>
-                  <div class="icon">
-                    <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
-                    Ensino Superior em Farmácia
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-prescription" style="color: #ff904a;"></i>
-                    CRF ativo
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-hospital" style="color: #ff904a;"></i>
-                    Experiência em hospital/clínica
-                  </div>
-                </li>
-              </ul>
-
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais etapas desse processo seletivo?</h5>
-                  <div class="icon">
-                    <i class="fas fa-file-alt" style="color: #ff904a;"></i>
-                    Cadastro
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-user-check" style="color: #ff904a;"></i>
-                    Análise do seu perfil
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-comments" style="color: #ff904a;"></i>
-                    Entrevistas
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-file-signature" style="color: #ff904a;"></i>
-                    Proposta
-                  </div>
-                </li>
-              </ul>
-
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais os benefícios?</h5>
-                  <div class="icon">
-                    <i class="fas fa-medkit" style="color: #ff904a;"></i>
-                    Assistência Médica/Odontológica
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-bus" style="color: #ff904a;"></i>
-                    Vale Transporte/Vale Refeição
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-money-check" style="color: #ff904a;"></i>
-                    PLR (Participação nos Lucros e Resultados)
-                  </div>
-                </li>
-              </ul>
-
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>A empresa tem Acessibilidade para PCD?</h5>
-                  <div class="icon">
-                    <i class="fas fa-wheelchair" style="color: #ff904a;"></i>
-                    Acessos a ambientes adaptados e estacionamento para veículos adaptados
-                  </div>
-                </li>
-              </ul>
-
-
-              <p class="container lead text-left">
-                Por aqui, nós construímos o futuro das finanças estratégicas com inclusão todos os dias. Vem com a
-                gente?
-              </p>
-              <div class="container">
-                <a href="cadastroCandidatos.html" class="btn btn-primary"
-                  style="background-color: #ff904a;">Candidate-se</a>
-              </div>
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal 04 - Vaga: Farmacêutico Hospitalar (Saúde Connect) -->
-      <div class="modal fade" id="modalCard04" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content shadow">
-            <div class="modal-header">
-              <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-            </div>
-
-            <div class="modal-body">
-
-              <p class="container lead text-left">
-                Trazendo consigo uma visão clara, valores sólidos e uma missão comprometida com a inclusão. Nossa
-                jornada
-                até aqui é marcada por uma busca constante pela excelência, e agora, ao oferecer a oportunidade para a
-                posição de Farmacêutico Hospitalar, buscamos agregar talentos que compartilhem dessa visão única.
-              </p>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>O que você precisa pra se candidatar?</h5>
-                  <div class="icon">
-                    <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
-                    Ensino Superior em Farmácia
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-prescription" style="color: #ff904a;"></i>
-                    CRF ativo
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-hospital" style="color: #ff904a;"></i>
-                    Experiência em hospital/clínica
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais etapas desse processo seletivo?</h5>
-                  <div class="icon">
-                    <i class="fas fa-file-alt" style="color: #ff904a;"></i>
-                    Cadastro
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-user-check" style="color: #ff904a;"></i>
-                    Análise do seu perfil
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-comments" style="color: #ff904a;"></i>
-                    Entrevistas
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-file-signature" style="color: #ff904a;"></i>
-                    Proposta
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais os benefícios?</h5>
-                  <div class="icon">
-                    <i class="fas fa-medkit" style="color: #ff904a;"></i>
-                    Assistência Médica/Odontológica
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-bus" style="color: #ff904a;"></i>
-                    Vale Transporte/Vale Refeição
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-money-check" style="color: #ff904a;"></i>
-                    PLR (Participação nos Lucros e Resultados)
-                  </div>
-                </li>
-              </ul>
-
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>A empresa tem Acessibilidade para PCD?</h5>
-                  <div class="icon">
-                    <i class="fas fa-wheelchair" style="color: #ff904a;"></i>
-                    Acessos a ambientes adaptados e estacionamento para veículos adaptados
-                  </div>
-                </li>
-              </ul>
-
-
-
-              <p class="container lead text-left">
-                Por aqui, nós construímos o futuro da saúde conectada com inclusão todos os dias. Vem com a gente?
-              </p>
-              <div class="container">
-                <a href="cadastroCandidatos.html" class="btn btn-primary"
-                  style="background-color: #ff904a;">Candidate-se</a>
-              </div>
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal 05 - Vaga: Desenvolvedor JR (DevInova) -->
-      <div class="modal fade" id="modalCard05" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content shadow">
-            <div class="modal-header">
-              <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-            </div>
-
-            <div class="modal-body">
-
-              <p class="container lead text-left">
-                Trazendo consigo uma visão clara, valores sólidos e uma missão comprometida com a inclusão. Nossa
-                jornada
-                até aqui é marcada por uma busca constante pela excelência, e agora, ao oferecer a oportunidade para a
-                posição de Desenvolvedor(a) JR, buscamos agregar talentos que compartilhem dessa visão única.
-              </p>
-
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>O que você precisa pra se candidatar?</h5>
-                  <div class="icon">
-                    <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
-                    Ensino Superior completo ou em andamento em Ciência da Computação ou áreas relacionadas
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-code" style="color: #ff904a;"></i>
-                    Conhecimento em linguagens de programação (ex: Java, Python, JavaScript)
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-laptop-code" style="color: #ff904a;"></i>
-                    Experiência em desenvolvimento de software
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais etapas desse processo seletivo?</h5>
-                  <div class="icon">
-                    <i class="fas fa-file-alt" style="color: #ff904a;"></i>
-                    Cadastro
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-user-check" style="color: #ff904a;"></i>
-                    Análise do seu perfil
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-comments" style="color: #ff904a;"></i>
-                    Entrevistas
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-flask" style="color: #ff904a;"></i>
-                    Testes práticos
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-file-contract" style="color: #ff904a;"></i>
-                    Proposta
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais os benefícios?</h5>
-                  <div class="icon">
-                    <i class="fas fa-medkit" style="color: #ff904a;"></i>
-                    Assistência Médica/Odontológica
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-bus" style="color: #ff904a;"></i>
-                    Vale Transporte/Vale Refeição
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-clock" style="color: #ff904a;"></i>
-                    Horário flexível
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-users" style="color: #ff904a;"></i>
-                    Ambiente colaborativo
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>A empresa tem Acessibilidade para PCD?</h5>
-                  <div class="icon">
-                    <i class="fas fa-wheelchair" style="color: #ff904a;"></i>
-                    Acessos a ambientes adaptados e estacionamento para veículos adaptados
-                  </div>
-                </li>
-              </ul>
-
-
-
-              <p class="container lead text-left">
-                Por aqui, nós construímos o futuro da inovação com inclusão todos os dias. Vem com a gente?
-              </p>
-              <div class="container">
-                <a href="cadastroCandidatos.html" class="btn btn-primary"
-                  style="background-color: #ff904a;">Candidate-se</a>
-              </div>
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal 06 - Vaga: Assistente de Marketing (Marketing Solutions) -->
-      <div class="modal fade" id="modalCard06" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content shadow">
-            <div class="modal-header">
-              <h4 class="modal-title" id="modalSaibaMaisLabel">Descrição da Vaga</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-            </div>
-
-            <div class="modal-body">
-
-              <p class="container lead text-left">
-                Trazendo consigo uma visão clara, valores sólidos e uma missão comprometida com a inclusão. Nossa
-                jornada
-                até aqui é marcada por uma busca constante pela excelência, e agora, ao oferecer a oportunidade para a
-                posição de Assistente de Marketing, buscamos agregar talentos que compartilhem dessa visão única.
-              </p>
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>O que você precisa pra se candidatar?</h5>
-                  <div class="icon">
-                    <i class="fas fa-graduation-cap" style="color: #ff904a;"></i>
-                    Formação em Marketing, Publicidade, Comunicação ou áreas relacionadas
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-paint-brush" style="color: #ff904a;"></i>
-                    Conhecimento em ferramentas de design gráfico (ex: Adobe Photoshop, Illustrator)
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-chart-line" style="color: #ff904a;"></i>
-                    Experiência em marketing digital
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais etapas desse processo seletivo?</h5>
-                  <div class="icon">
-                    <i class="fas fa-file-alt" style="color: #ff904a;"></i>
-                    Cadastro
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-user-check" style="color: #ff904a;"></i>
-                    Análise do seu perfil
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-comments" style="color: #ff904a;"></i>
-                    Entrevistas
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-flask" style="color: #ff904a;"></i>
-                    Testes práticos
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-file-contract" style="color: #ff904a;"></i>
-                    Proposta
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>Quais os benefícios?</h5>
-                  <div class="icon">
-                    <i class="fas fa-medkit" style="color: #ff904a;"></i>
-                    Assistência Médica/Odontológica
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-bus" style="color: #ff904a;"></i>
-                    Vale Transporte/Vale Refeição
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-dumbbell" style="color: #ff904a;"></i>
-                    Gympass
-                  </div>
-                  <div class="icon">
-                    <i class="fas fa-chart-pie" style="color: #ff904a;"></i>
-                    PLR (Participação nos Lucros e Resultados)
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="list-group m-2 w-75 container lead text-left">
-                <li class="list-group-item">
-                  <h5>A empresa tem Acessibilidade para PCD?</h5>
-                  <div class="icon">
-                    <i class="fas fa-wheelchair" style="color: #ff904a;"></i>
-                    Acessos a ambientes adaptados e estacionamento para veículos adaptados
-                  </div>
-                </li>
-              </ul>
-
-
-              <p class="container lead text-left">
-                Por aqui, nós construímos o futuro do marketing com inclusão todos os dias. Vem com a gente?
-              </p>
-              <div class="container">
-                <a href="cadastroCandidatos.html" class="btn btn-primary"
-                  style="background-color: #ff904a;">Candidate-se</a>
-              </div>
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal end -->
-    </main>
-    <!-- Footer -->
-    <footer class="container-fluid custom-bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
-      <div class="container py-5 px-lg-5">
-        <div class="row g-5">
-
-          <section class="col-md-6 col-lg-3">
-            <h2 class="section-title text-white h5 mb-4">Endereço</h2>
-            <address>
-              <p><i class="fa fa-map-marker-alt me-3"></i>+55 Brasil, BR.</p>
-              <p><i class="fa fa-phone-alt me-3"></i>+55 9-9999-9999</p>
-              <p><i class="fa fa-envelope me-3"></i>squad10manha2023<br>recodepro@gmail.com</p>
-            </address>
-            <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/rederecode/"><i
-                  class="fab fa-linkedin-in"></i></a>
-              <a class="btn btn-outline-light btn-social" href="https://github.com/N-O-V-A-RecodePro2023"><i
-                  class="fab fa-github"></i></a>
-              <a class="btn btn-outline-light btn-social" href="mailto:squad10manha2023recodepro@gmail.com"><i
-                  class="fas fa-envelope"></i></a>
-            </div>
-          </section>
-
-          <section class="col-md-6 col-lg-3">
-            <h2 class="section-title text-white h5 mb-4">Links Rápidos</h2>
-            <nav>
-              <h2 class="nocontent d-none"> Lista Links Rápidos </h2>
-              <a class="btn btn-link" href="sobre.html">Sobre nós</a>
-              <a class="btn btn-link" href="contato.html">Contate-nos</a>
-              <a class="btn btn-link" href="privacidade.html">Politica de Privacidade</a>
-              <a class="btn btn-link" href="vagas.html">Vagas</a>
-            </nav>
-          </section>
-
-          <section class="col-md-6 col-lg-3">
-            <h2 class="section-title text-white h5 mb-4">Contato</h2>
-            <p>Para qualquer dúvida, nos contate!</p>
-            <div class="position-relative w-100 mt-3">
-              <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Seu E-mail"
-                style="height: 48px;">
-              <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2">
-                <i class="fa fa-paper-plane text-primary fs-4"></i>
-              </button>
-            </div>
-          </section>
-
-          <section class="container px-lg-5">
-            <h2 class="nocontent d-none"> Direitos Reservados </h2>
-            <div class="copyright">
-              <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                  &copy; <a class="border-bottom" href="https://github.com/N-O-V-A-RecodePro2023">Squad
-                    10</a>, 2023 © Todos os Direitos Reservados
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                  <div class="footer-menu">
-                    <a href="index.html">Home</a>
-                    <a href="">Cookies</a>
-                    <a href="contato.html">Ajuda</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-        </div>
-      </div>
-    </footer>
-    <!-- Footer end -->
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-  </div>
-  <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/isotope/isotope.pkgd.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-  <script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
-  <!-- Template Javascript -->
-  <script src="js/main.js"></script>
-
-  <script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
-  <script>
-    avisoCookiesDrcode({})
-  </script>
-  <script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
-  <script>
-    avisoCookiesDrcode({
-      message: 'Utilizamos cookies para que você tenha a melhor experiência em nosso site. Para saber mais acesse nossa página de Política de Privacidade',
-      backgroundColor: 'rgba(255,255,255,0.95)',
-      textColor: '#666666',
-      buttonBackgoundColor: '#0e9a20',
-      buttonHoverBackgoundColor: '#0a6b16',
-      buttonTextColor: '#ffffff'
-    })
-  </script>
-</body>
-
-</html>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        <script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
+        <script>
+            avisoCookiesDrcode({})
+        </script>
+        <script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
+        <script>
+            avisoCookiesDrcode({
+                message: 'Utilizamos cookies para que você tenha a melhor experiência em nosso site. Para saber mais acesse nossa página de Política de Privacidade',
+                backgroundColor: 'rgba(255,255,255,0.95)',
+                textColor: '#666666',
+                buttonBackgoundColor: '#0e9a20',
+                buttonHoverBackgoundColor: '#0a6b16',
+                buttonTextColor: '#ffffff'
+            })
+        </script>

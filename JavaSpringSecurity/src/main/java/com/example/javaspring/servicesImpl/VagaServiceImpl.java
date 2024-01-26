@@ -27,6 +27,7 @@ public class VagaServiceImpl implements VagaService{
     }
 
     @Override
+    @Transactional
     public List<Vaga> getAllVagas(){
         return vagaRepository.findAll();
     }
@@ -38,6 +39,10 @@ public class VagaServiceImpl implements VagaService{
             vagaExistente.setCodVaga(vagaAtualizada.getCodVaga());
             vagaExistente.setNomeVaga(vagaAtualizada.getNomeVaga());
             vagaExistente.setDescVaga(vagaAtualizada.getDescVaga());
+            vagaExistente.setLocalVaga(vagaAtualizada.getLocalVaga());
+            vagaExistente.setModalidadeVaga(vagaAtualizada.getModalidadeVaga());
+            vagaExistente.setSalarioVaga(vagaAtualizada.getSalarioVaga());
+            vagaExistente.setQtdVaga(vagaAtualizada.getQtdVaga());
             return vagaRepository.save(vagaExistente);
         } else {
             throw new RuntimeException("Vaga " + idVaga + " não encontrado!");

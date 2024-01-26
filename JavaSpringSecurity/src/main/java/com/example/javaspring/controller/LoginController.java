@@ -33,10 +33,10 @@ public class LoginController {
         if (usuario != null) {
             // sucesso no login
             if (usuario instanceof Candidato) {
-                return "redirect:/candidato/candidato_perfil/" + usuario.getId();
+                return "redirect:/candidato/candidatoPerfil/" + usuario.getId();
             }
             else if (usuario instanceof Empresa) {
-                return "redirect:/empresa/empresa_perfil/" + usuario.getId();
+                return "redirect:/empresa/empresaPerfil/" + usuario.getId();
             }
         }
 

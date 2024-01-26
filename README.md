@@ -23,7 +23,7 @@ Projeto desenvolvido durante o curso **Recode Pro 2023** para formação de dese
 
 ### **Backend** 
 -  **Java**
-	- Spring Boot Security
+	- Spring Boot
    	- Thymeleaf
 -  **SQL**
 

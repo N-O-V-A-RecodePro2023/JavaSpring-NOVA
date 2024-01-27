@@ -4,7 +4,7 @@
       <img alt="logoNova" title="LOGONOVA" src="https://github.com/N-O-V-A-RecodePro2023/siteNOVA/blob/main/IMG/LogoNOVA.png" width="200vw"/>
 </h1>
 
-<h4 align="center"> :construction: Projeto em construção :construction: </h4>
+<h4 align="center">  :rocket: Projeto finalizado! :rocket: </h4>
 
 ## 💻 Sobre o projeto
 
@@ -16,6 +16,9 @@ Projeto desenvolvido durante o curso **Recode Pro 2023** para formação de dese
 ## 🛠 Tecnologias
 
 ### **Frontend** 
+
+[Repositório FrontEnd](https://github.com/N-O-V-A-RecodePro2023/site-NOVA)
+
 -   **HTML**
 -   **CSS**
 -   **Bootstrap**

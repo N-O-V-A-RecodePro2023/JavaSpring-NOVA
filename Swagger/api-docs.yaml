@@ -1,0 +1,556 @@
+openapi: 3.0.1
+info:
+  title: OpenAPI definition
+  version: v0
+servers:
+- url: http://localhost:8080
+  description: Generated server url
+paths:
+  /vagas/editar/{idVaga}:
+    get:
+      tags:
+      - vaga-controller
+      operationId: ShowFormUpdate
+      parameters:
+      - name: idVaga
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+    post:
+      tags:
+      - vaga-controller
+      operationId: updateVaga
+      parameters:
+      - name: idVaga
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Vaga'
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /vagas/cadastro:
+    post:
+      tags:
+      - vaga-controller
+      operationId: saveVaga
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Vaga'
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /login/login:
+    get:
+      tags:
+      - login-controller
+      operationId: showLoginPage
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+    post:
+      tags:
+      - login-controller
+      operationId: login
+      parameters:
+      - name: email
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: senha
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /empresa/editar/{idEmpresa}:
+    get:
+      tags:
+      - empresa-controller
+      operationId: showFormForUpdate
+      parameters:
+      - name: idEmpresa
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+    post:
+      tags:
+      - empresa-controller
+      operationId: updateEmpresa
+      parameters:
+      - name: idEmpresa
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Empresa'
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /empresa/cadastro:
+    post:
+      tags:
+      - empresa-controller
+      operationId: saveEmpresa
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Empresa'
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /contato/cadastro:
+    post:
+      tags:
+      - contato-controller
+      operationId: saveContato
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Contato'
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /candidato/editar/{idCandidato}:
+    get:
+      tags:
+      - candidato-controller
+      operationId: showFormForUpdate_1
+      parameters:
+      - name: idCandidato
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+    post:
+      tags:
+      - candidato-controller
+      operationId: updateCandidato
+      parameters:
+      - name: idCandidato
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Candidato'
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /candidato/cadastro:
+    post:
+      tags:
+      - candidato-controller
+      operationId: saveCandidato
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Candidato'
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /vagas/vagas:
+    get:
+      tags:
+      - vaga-controller
+      operationId: showVagas
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /vagas/vaga/{idVaga}:
+    get:
+      tags:
+      - vaga-controller
+      operationId: showVaga
+      parameters:
+      - name: idVaga
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /vagas/novo/{idEmpresa}:
+    get:
+      tags:
+      - vaga-controller
+      operationId: showFormForAdd
+      parameters:
+      - name: idEmpresa
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /vagas/deletar/{idVaga}:
+    get:
+      tags:
+      - vaga-controller
+      operationId: deleteVaga
+      parameters:
+      - name: idVaga
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /empresa/novo:
+    get:
+      tags:
+      - empresa-controller
+      operationId: showFormForAdd_1
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /empresa/empresaPerfil/{idEmpresa}:
+    get:
+      tags:
+      - empresa-controller
+      operationId: showEmpresaPerfil
+      parameters:
+      - name: idEmpresa
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /empresa/deletar/{idEmpresa}:
+    get:
+      tags:
+      - empresa-controller
+      operationId: deleteEmpresa
+      parameters:
+      - name: idEmpresa
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /contato/novo:
+    get:
+      tags:
+      - contato-controller
+      operationId: showFormForAdd_2
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /candidatura/deletar/{idCandidatura}:
+    get:
+      tags:
+      - candidatura-controller
+      operationId: deleteCandidatura
+      parameters:
+      - name: idCandidatura
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /candidatura/candidaturas:
+    get:
+      tags:
+      - candidatura-controller
+      operationId: showCandidaturas
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /candidato/novo:
+    get:
+      tags:
+      - candidato-controller
+      operationId: showFormForAdd_3
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /candidato/deletar/{idCandidato}:
+    get:
+      tags:
+      - candidato-controller
+      operationId: deleteCandidato
+      parameters:
+      - name: idCandidato
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /candidato/candidatoPerfil/{idCandidato}:
+    get:
+      tags:
+      - candidato-controller
+      operationId: showCandidatoPerfil
+      parameters:
+      - name: idCandidato
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+components:
+  schemas:
+    Empresa:
+      type: object
+      properties:
+        razaoSocialEmpresa:
+          type: string
+        nomeFantasiaEmpresa:
+          type: string
+        cnpjEmpresa:
+          type: string
+        telefoneEmpresa:
+          type: string
+        seguimentoEmpresa:
+          type: string
+        descSeguimentoEmpresa:
+          type: string
+        enderecoEmpresa:
+          type: string
+        numeroEmpresa:
+          type: string
+        complementoEmpresa:
+          type: string
+        bairroEmpresa:
+          type: string
+        cidadeEmpresa:
+          type: string
+        estadoEmpresa:
+          type: string
+        id:
+          type: integer
+          format: int32
+        senha:
+          type: string
+        email:
+          type: string
+    Vaga:
+      type: object
+      properties:
+        idVaga:
+          type: integer
+          format: int32
+        codVaga:
+          type: string
+        nomeVaga:
+          type: string
+        descVaga:
+          type: string
+        localVaga:
+          type: string
+        modalidadeVaga:
+          type: string
+        qtdVaga:
+          type: integer
+          format: int32
+        salarioVaga:
+          type: number
+          format: double
+        empresa:
+          $ref: '#/components/schemas/Empresa'
+    Contato:
+      type: object
+      properties:
+        idContato:
+          type: integer
+          format: int32
+        nomeContato:
+          type: string
+        emailContato:
+          type: string
+        assuntoContato:
+          type: string
+        mensagemContato:
+          type: string
+    Candidato:
+      type: object
+      properties:
+        nomeCandidato:
+          type: string
+        cpfCandidato:
+          type: string
+        telefoneCandidato:
+          type: string
+        tipoDeficienciaCandidato:
+          type: string
+        descDeficienciaCandidato:
+          type: string
+        formacaoAcademicaCandidato:
+          type: string
+        enderecoCandidato:
+          type: string
+        numeroResidenciaCandidato:
+          type: string
+        complementoResidenciaCandidato:
+          type: string
+        bairroCandidato:
+          type: string
+        cidadeCandidato:
+          type: string
+        estadoCandidato:
+          type: string
+        id:
+          type: integer
+          format: int32
+        senha:
+          type: string
+        email:
+          type: string

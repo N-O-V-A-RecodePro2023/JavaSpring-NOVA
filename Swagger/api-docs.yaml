@@ -478,9 +478,9 @@ components:
         id:
           type: integer
           format: int32
-        senha:
-          type: string
         email:
+          type: string
+        senha:
           type: string
     Vaga:
       type: object
@@ -550,7 +550,7 @@ components:
         id:
           type: integer
           format: int32
-        senha:
-          type: string
         email:
+          type: string
+        senha:
           type: string

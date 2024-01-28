@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
 
   <!-- Icon Font Stylesheet -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -27,33 +27,44 @@
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Customized Bootstrap Stylesheet -->
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Template Stylesheet -->
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
-  <!-- Acessibilidade -->
+  <!-- Acessibilidade-->
   <link rel="import" href="vlibras.html">
   <script src="https://cdn.userway.org/widget.js" data-account="09FcxZNn6a"></script>
   <script src="acessibilidade.js"></script>
-
-  <!-- Acessibilidade (VLibras) -->
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
-  <style>
-    .access-button {
-      border-radius: 50px;
-    }
-  </style>
 </head>
 
+<!-- Acessibilidade-->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<style>
+  .access-button {
+    border-radius: 50px;
+  }
+</style>
+
+<script src="https://cdn.userway.org/widget.js" data-account="09FcxZNn6a"></script>
+<script src="acessibilidade.js"></script>
+</head>
+
+<body>
 
 <header class="container-xxl position-relative p-0">
   <!-- Navigation Start -->
   <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0" role="navigation"
-    aria-label="Main Navigation">
+       aria-label="Main Navigation">
     <h2 class="nocontent d-none"> Barra de Navegação </h2>
     <a href="/index.html" class="navbar-brand p-0" aria-label="Link to Home">
       <figure class="m-0">
@@ -63,7 +74,7 @@
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle Navigation">
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle Navigation">
       <span class="fa fa-bars"></span>
     </button>
 
@@ -71,25 +82,24 @@
       <ul class="navbar-nav mx-auto py-0">
         <li class="nav-item"><a href="sobre.html" class="nav-link" aria-label="Link to About Us">Sobre Nós</a></li>
         <li class="nav-item"><a href="depoimentos.html" class="nav-link"
-            aria-label="Link to Testimonials">Depoimentos</a></li>
+                                aria-label="Link to Testimonials">Depoimentos</a></li>
         <li class="nav-item"><a href="/vagas/vagas" class="nav-link" aria-label="Link to Job Openings">Vagas</a></li>
         <li class="nav-item"><a href="cursos.html" class="nav-link" aria-label="Link to Courses">Cursos</a></li>
         <li class="nav-item"><a href="/contato/novo" class="nav-link" aria-label="Link to Contact">Contato</a></li>
 
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
-            aria-expanded="false" aria-label="Dropdown for Registration">Cadastre-se</a>
+             aria-expanded="false" aria-label="Dropdown for Registration">Cadastre-se</a>
           <ul class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
             <li><a href="/empresa/novo" class="dropdown-item"
-                aria-label="Link to Business Registration">Empresas</a></li>
+                   aria-label="Link to Business Registration">Empresas</a></li>
             <li><a href="/candidato/novo" class="dropdown-item"
-                aria-label="Link to Candidate Registration">Candidatos</a></li>
+                   aria-label="Link to Candidate Registration">Candidatos</a></li>
           </ul>
         </li>
       </ul>
-
       <a href="/login/login" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
-        aria-label="Link to Login">Entrar</a>
+         aria-label="Link to Login">Entrar</a>
     </div>
   </nav>
   <!-- Navigation End -->
@@ -97,7 +107,7 @@
 
 <main>
   <!-- Quem Somos Start -->
-  <section class="container-xxl hero-header custom-bg-primary">
+  <section class="container-xxl hero-header custom-bg-primary" style="background-color: #257f88ff;">
     <div class="container px-lg-5">
       <div class="row g-5 align-items-end">
         <div class="col-lg-6 text-center text-lg-start">
@@ -135,7 +145,7 @@
             <h3 class="nocontent d-none">Missão</h3>
             <figure>
               <img src="IMG/card001.png" class="card-img-top rounded-circle"
-                alt="Imagem representando a missão da organização">
+                   alt="Imagem representando a missão da organização">
             </figure>
             <p class="m-0">Promovendo inclusão e igualdade, nossa missão é conectar pessoas com
               deficiência a oportunidades de emprego significativas e transformadoras.</p>
@@ -147,7 +157,7 @@
             <h3 class="nocontent d-none">Visão</h3>
             <figure>
               <img src="IMG/card002.png" class="card-img-top rounded-circle"
-                alt="Imagem representando a visão da organização">
+                   alt="Imagem representando a visão da organização">
             </figure>
             <p class="m-0">Fomentamos uma sociedade em que cada oportunidade de emprego para PCD seja um passo
               para um futuro inclusivo e bem-sucedido.</p>
@@ -159,7 +169,7 @@
             <h3 class="nocontent d-none">Valores</h3>
             <figure>
               <img src="IMG/card003.png" class="card-img-top rounded-circle"
-                alt="Imagem representando os valores da organização">
+                   alt="Imagem representando os valores da organização">
             </figure>
             <p class="m-0">Guiados pela empatia, ética e colaboração, valorizamos a inclusão, a
               excelência e o
@@ -198,7 +208,7 @@
             </div>
             <div class="progress">
               <div class="progress-bar custom-bg-primary" role="progressbar" aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100" style="width: 25%;"></div>
+                   aria-valuemax="100" style="width: 25%;"></div>
             </div>
           </div>
           <div class="skill mb-4">
@@ -208,7 +218,7 @@
             </div>
             <div class="progress">
               <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                aria-valuemax="100" style="width: 60%;"></div>
+                   aria-valuemax="100" style="width: 60%;"></div>
             </div>
           </div>
           <div class="skill mb-4">
@@ -218,13 +228,13 @@
             </div>
             <div class="progress">
               <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="34.8" aria-valuemin="0"
-                aria-valuemax="100" style="width: 34.8%;"></div>
+                   aria-valuemax="100" style="width: 34.8%;"></div>
             </div>
           </div>
 
           <a href="https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/0a9afaed04d79830f73a16136dba23b9.pdf"
-            class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3"
-            style="background-color: #ff904a; color: #ffffff;">Leia Mais</a>
+             class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3"
+             style="background-color: #ff904a; color: #ffffff;">Leia Mais</a>
         </div>
         <div class="col-lg-6">
           <img class="img-fluid wow zoomIn rounded" data-wow-delay="0.5s" src="img/banner_index1.png">
@@ -234,7 +244,7 @@
   </section>
   <!-- Empregabilidade End -->
   <!-- Facts Section Start -->
-  <section class="facts-section container-xxl custom-bg-primary py-5 wow fadeInUp" data-wow-delay="0.1s">
+  <section class="facts-section container-xxl custom-bg-primary py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color: #257f88ff;">
     <h2 class="nocontent d-none">Estatísticas</h2>
     <div class="container py-5 px-lg-5">
       <div class="row g-4">
@@ -389,7 +399,7 @@
               <img class="img-fluid w-100" src="img/impusionaVendas.png" alt="Logo da Empresa">
               <div class="portfolio-overlay">
                 <a class="btn btn-square btn-outline-light mx-1" href="javascript:void(0);"
-                  onclick="showDetails('modalCard01')"><i class="fa fa-eye"></i></a>
+                   onclick="showDetails('modalCard01')"><i class="fa fa-eye"></i></a>
               </div>
             </div>
             <div class="bg-light p-4">
@@ -424,7 +434,7 @@
               <img class="img-fluid w-100" src="img/producao.png" alt="Logo da Empresa">
               <div class="portfolio-overlay">
                 <a class="btn btn-square btn-outline-light mx-1" href="javascript:void(0);"
-                  onclick="showDetails('modalCard02')"><i class="fa fa-eye"></i></a>
+                   onclick="showDetails('modalCard02')"><i class="fa fa-eye"></i></a>
 
               </div>
             </div>
@@ -460,7 +470,7 @@
               <img class="img-fluid w-100" src="img/financas.png" alt="Logo da Empresa">
               <div class="portfolio-overlay">
                 <a class="btn btn-square btn-outline-light mx-1" href="javascript:void(0);"
-                  onclick="showDetails('modalCard03')"><i class="fa fa-eye"></i></a>
+                   onclick="showDetails('modalCard03')"><i class="fa fa-eye"></i></a>
 
               </div>
             </div>
@@ -697,7 +707,7 @@
 
           <div class="container">
             <a href="cadastroCandidatos.html" class="btn btn-primary"
-              style="background-color: #ff904a;">Candidate-se</a>
+               style="background-color: #ff904a;">Candidate-se</a>
           </div>
 
         </div>
@@ -755,8 +765,7 @@
                 <i class="fas fa-user-check" style="color: #ff904a;"></i>
                 Análise do seu perfil
               </div>
-              <div class="icon">
-                <i class="fas fa-comments" style="color: #ff904a;"></i>
+              <div class="icon">fa
                 Entrevistas
               </div>
               <div class="icon">
@@ -916,7 +925,7 @@
           </p>
           <div class="container">
             <a href="cadastroCandidatos.html" class="btn btn-primary"
-              style="background-color: #ff904a;">Candidate-se</a>
+               style="background-color: #ff904a;">Candidate-se</a>
           </div>
 
         </div>
@@ -1080,7 +1089,7 @@
           </p>
           <div class="container">
             <a href="cadastroCandidatos.html" class="btn btn-primary"
-              style="background-color: #ff904a;">Candidate-se</a>
+               style="background-color: #ff904a;">Candidate-se</a>
           </div>
 
         </div>
@@ -1184,7 +1193,7 @@
           </p>
           <div class="container">
             <a href="cadastroCandidatos.html" class="btn btn-primary"
-              style="background-color: #ff904a;">Candidate-se</a>
+               style="background-color: #ff904a;">Candidate-se</a>
           </div>
 
         </div>
@@ -1296,7 +1305,7 @@
           </p>
           <div class="container">
             <a href="cadastroCandidatos.html" class="btn btn-primary"
-              style="background-color: #ff904a;">Candidate-se</a>
+               style="background-color: #ff904a;">Candidate-se</a>
           </div>
 
         </div>
@@ -1405,7 +1414,7 @@
           </p>
           <div class="container">
             <a href="cadastroCandidatos.html" class="btn btn-primary"
-              style="background-color: #ff904a;">Candidate-se</a>
+               style="background-color: #ff904a;">Candidate-se</a>
           </div>
 
         </div>
@@ -1433,7 +1442,7 @@
             Estou muito grato por essa plataforma.</p>
           <div class="d-flex align-items-center">
             <img class="img-fluid flex-shrink-0 rounded-circle" src="img/mariodepo.jpg"
-              style="width: 65px; height: 65px;">
+                 style="width: 65px; height: 65px;">
             <div class="ps-4">
               <h5 class="mb-1">Mario Silva</h5>
               <span>Desenvolvedor</span>
@@ -1450,7 +1459,7 @@
             Recomendo a todos.</p>
           <div class="d-flex align-items-center">
             <img class="img-fluid flex-shrink-0 rounded-circle" src="img/mariadepo.jpg"
-              style="width: 65px; height: 65px;">
+                 style="width: 65px; height: 65px;">
             <div class="ps-4">
               <h5 class="mb-1">Maria Clara</h5>
               <span>Administradora</span>
@@ -1468,7 +1477,7 @@
           </p>
           <div class="d-flex align-items-center">
             <img class="img-fluid flex-shrink-0 rounded-circle" src="img/anadepo.jpg"
-              style="width: 65px; height: 65px;">
+                 style="width: 65px; height: 65px;">
             <div class="ps-4">
               <h5 class="mb-1">Ana Paula</h5>
               <span>Design</span>
@@ -1504,7 +1513,7 @@
                 <a class="btn btn-square mx-1" href="https://github.com/gama07"><i class="fab fa-github"></i></a>
                 <a class="btn btn-square mx-1" href="mailto:brunalorena01@gmail.com"><i class="fas fa-envelope"></i></a>
                 <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/bruna-lorena-46819528a/"><i
-                    class="fab fa-linkedin-in"></i></a>
+                        class="fab fa-linkedin-in"></i></a>
               </div>
             </div>
           </article>
@@ -1522,9 +1531,9 @@
               <div class="d-flex justify-content-center p-4">
                 <a class="btn btn-square mx-1" href="https://github.com/mikemars0701"><i class="fab fa-github"></i></a>
                 <a class="btn btn-square mx-1" href="mailto:maycon_martins2017@hotmail.com"><i
-                    class="fas fa-envelope"></i></a>
+                        class="fas fa-envelope"></i></a>
                 <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/maycon-martins-lima/"><i
-                    class="fab fa-linkedin-in"></i></a>
+                        class="fab fa-linkedin-in"></i></a>
               </div>
             </div>
           </article>
@@ -1542,9 +1551,9 @@
               <div class="d-flex justify-content-center p-4">
                 <a class="btn btn-square mx-1" href="https://github.com/eu1natacha"><i class="fab fa-github"></i></a>
                 <a class="btn btn-square mx-1" href="mailto:natachacarvalho90@gmail.com"><i
-                    class="fas fa-envelope"></i></a>
+                        class="fas fa-envelope"></i></a>
                 <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/natacha-carvalho//"><i
-                    class="fab fa-linkedin-in"></i></a>
+                        class="fab fa-linkedin-in"></i></a>
               </div>
             </div>
           </article>
@@ -1563,7 +1572,7 @@
                 <a class="btn btn-square mx-1" href="https://github.com/Natalia203"><i class="fab fa-github"></i></a>
                 <a class="btn btn-square mx-1" href="mailto:natalia.mq203@gmail.com"><i class="fas fa-envelope"></i></a>
                 <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/natália-marques-2a1763186/"><i
-                    class="fab fa-linkedin-in"></i></a>
+                        class="fab fa-linkedin-in"></i></a>
               </div>
             </div>
           </article>
@@ -1580,10 +1589,10 @@
               </figure>
               <div class="d-flex justify-content-center p-4">
                 <a class="btn btn-square mx-1" href="https://github.com/nataliarodrxgues"><i
-                    class="fab fa-github"></i></a>
+                        class="fab fa-github"></i></a>
                 <a class="btn btn-square mx-1" href="mailto:seu-email@dominio.com"><i class="fas fa-envelope"></i></a>
                 <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/nataliarodrxgues/"><i
-                    class="fab fa-linkedin-in"></i></a>
+                        class="fab fa-linkedin-in"></i></a>
               </div>
             </div>
           </article>
@@ -1596,66 +1605,79 @@
 
 <!-- Footer -->
 <footer class="container-fluid custom-bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <section class="col-md-6 col-lg-3">
-                        <h2 class="section-title text-white h5 mb-4">Endereço</h2>
-                        <address>
-                            <p><i class="fa fa-map-marker-alt me-3"></i>+55 Brasil, BR.</p>
-                            <p><i class="fa fa-phone-alt me-3"></i>+55 9-9999-9999</p>
-                            <p><i class="fa fa-envelope me-3"></i>squad10manha2023<br>recodepro@gmail.com</p>
-                        </address>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social"
-                                href="https://www.linkedin.com/company/rederecode/"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-light btn-social"
-                                href="https://github.com/N-O-V-A-RecodePro2023"><i class="fab fa-github"></i></a>
-                            <a class="btn btn-outline-light btn-social"
-                                href="mailto:squad10manha2023recodepro@gmail.com"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </section>
+  <div class="container py-5 px-lg-5">
+    <div class="row g-5">
 
-                    <section class="col-md-6 col-lg-3">
-                        <h2 class="section-title text-white h5 mb-4">Links Rápidos</h2>
-                        <nav>
-                            <h2 class="nocontent d-none"> Lista Links Rápidos </h2>
-                            <a class="btn btn-link" href="sobre.html">Sobre nós</a>
-                            <a class="btn btn-link" href="/contato/novo">Contate-nos</a>
-                            <a class="btn btn-link" href="privacidade.html">Politica de Privacidade</a>
-                            <a class="btn btn-link" href="/vagas/vagas">Vagas</a>
-                        </nav>
-                    </section>
+      <section class="col-md-6 col-lg-3">
+        <h2 class="section-title text-white h5 mb-4">Endereço</h2>
+        <address>
+          <p><i class="fa fa-map-marker-alt me-3"></i>+55 Brasil, BR.</p>
+          <p><i class="fa fa-phone-alt me-3"></i>+55 9-9999-9999</p>
+          <p><i class="fa fa-envelope me-3"></i>squad10manha2023<br>recodepro@gmail.com</p>
+        </address>
+        <div class="d-flex pt-2">
+          <a class="btn btn-outline-light btn-social"
+             href="https://www.linkedin.com/company/rederecode/"><i
+                  class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light btn-social"
+             href="https://github.com/N-O-V-A-RecodePro2023"><i class="fab fa-github"></i></a>
+          <a class="btn btn-outline-light btn-social"
+             href="mailto:squad10manha2023recodepro@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </section>
 
-                    
+      <section class="col-md-6 col-lg-3">
+        <h2 class="section-title text-white h5 mb-4">Links Rápidos</h2>
+        <nav>
+          <h2 class="nocontent d-none"> Lista Links Rápidos </h2>
+          <a class="btn btn-link" href="sobre.html">Sobre nós</a>
+          <a class="btn btn-link" href="contato.html">Contate-nos</a>
+          <a class="btn btn-link" href="privacidade.html">Politica de Privacidade</a>
+          <a class="btn btn-link" href="vagas.html">Vagas</a>
+        </nav>
+      </section>
 
-                    <section class="container px-lg-5">
-                        <h2 class="nocontent d-none"> Direitos Reservados </h2>
-                        <div class="copyright">
-                            <div class="row">
-                                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                                    &copy; <a class="border-bottom"
-                                        href="https://github.com/N-O-V-A-RecodePro2023">Squad
-                                        10</a>, 2023 © Todos os Direitos Reservados
-                                </div>
-                                <div class="col-md-6 text-center text-md-end">
-                                    <div class="footer-menu">
-                                        <a href="index.html">Home</a>
-                                        <a href="">Cookies</a>
-                                        <a href="contato.html">Ajuda</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+      <section class="col-md-6 col-lg-3">
+        <h2 class="section-title text-white h5 mb-4">Contato</h2>
+        <p>Para qualquer dúvida, nos contate!</p>
+        <div class="position-relative w-100 mt-3">
+          <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                 placeholder="Seu E-mail" style="height: 48px;">
+          <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2">
+            <i class="fa fa-paper-plane text-primary fs-4"></i>
+          </button>
+        </div>
+      </section>
 
-                </div>
+      <section class="container px-lg-5">
+        <h2 class="nocontent d-none"> Direitos Reservados </h2>
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom"
+                        href="https://github.com/N-O-V-A-RecodePro2023">Squad
+              10</a>, 2023 © Todos os Direitos Reservados
             </div>
-        </footer>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="index.html">Home</a>
+                <a href="">Cookies</a>
+                <a href="contato.html">Ajuda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</footer>
 <!-- Footer -->
-</div>
+
 <!-- Back to Top -->
 <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+</div>
+
 <!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -1666,24 +1688,9 @@
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="lib/isotope/isotope.pkgd.min.js"></script>
 <script src="lib/lightbox/js/lightbox.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css"></script>
-<script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
-
-<!-- Aviso de Cookies -->
-<script>
-  avisoCookiesDrcode({
-    message: 'Utilizamos cookies para que você tenha a melhor experiência em nosso site. Para saber mais acesse nossa página de Política de Privacidade',
-    backgroundColor: 'rgba(255,255,255,0.95)',
-    textColor: '#666666',
-    buttonBackgoundColor: '#0e9a20',
-    buttonHoverBackgoundColor: '#0a6b16',
-    buttonTextColor: '#ffffff'
-  });
-</script>
-
 </body>
 
 </html>
